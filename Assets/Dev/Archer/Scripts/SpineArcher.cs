@@ -14,12 +14,13 @@ public class SpineArcher : MonoBehaviour
 
     private SkeletonAnimation skeletonAnimation;
     public Spine.AnimationState spineAnimationState;
-    public Spine.Skeleton skeleton;
+    public Skeleton skeleton;
 
     private Bone gunBone; // Ссылка на кость "gun"
     public float tiltSpeed = 5f; // Скорость наклона
     public float maxTiltAngle = 30f; // Максимальный угол наклона
     private Vector3 lastMousePosition; // Последняя позиция мыши
+    private bool isAttacking = false; // Флаг для отслеживания атаки
 
     private void Start()
     {
@@ -38,9 +39,8 @@ public class SpineArcher : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0)) // Проверяем, удерживается ли левая кнопка мыши
+        if (isAttacking) // Проверяем, идет ли атака
         {
-            PlayStartAttackAnimation();
             Vector3 mouseDelta = Input.mousePosition - lastMousePosition; // Вычисляем изменение позиции мыши
 
             // Изменяем угол наклона в зависимости от перемещения мыши
@@ -51,10 +51,15 @@ public class SpineArcher : MonoBehaviour
                 gunBone.Rotation = newAngle;
             }
         }
-
+        
         lastMousePosition = Input.mousePosition; // Обновляем последнюю позицию мыши
+
+        if (!isAttacking && !IsPlayingIdle()) // Если не атакуем и не в состоянии idle
+        {
+            PlayerIdleAnimation(); // Переходим в состояние idle
+        }
     }
-    
+
     private void PlayStartAttackAnimation()
     {
         var currentAnimation = spineAnimationState.GetCurrent(0);
@@ -62,6 +67,34 @@ public class SpineArcher : MonoBehaviour
         if (currentAnimation == null || currentAnimation.Animation.Name != attack_start)
         {
             spineAnimationState.SetAnimation(0, attack_start, false); 
+            isAttacking = true; // Устанавливаем флаг атаки в true
         }
+    }
+
+    private void PlayerIdleAnimation()
+    {
+        var currentAnimation = spineAnimationState.GetCurrent(0);
+        
+        if (currentAnimation == null || currentAnimation.Animation.Name != idle)
+        {
+            spineAnimationState.SetAnimation(0, idle, true); 
+            isAttacking = false; // Сбрасываем флаг атаки при переходе в состояние idle
+        }
+    }
+
+    private bool IsPlayingIdle()
+    {
+        var currentAnimation = spineAnimationState.GetCurrent(0);
+        return currentAnimation != null && currentAnimation.Animation.Name == idle;
+    }
+
+    private void OnMouseDown() // Этот метод вызывается при нажатии на объект с коллайдером
+    {
+        PlayStartAttackAnimation();
+    }
+
+    private void OnMouseUp() // Этот метод вызывается при отпускании кнопки мыши
+    {
+        isAttacking = false; // Сбрасываем флаг атаки при отпускании кнопки мыши
     }
 }

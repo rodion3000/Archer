@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 721660630}
   - component: {fileID: 721660629}
   - component: {fileID: 721660633}
+  - component: {fileID: 721660634}
   m_Layer: 0
   m_Name: Spine GameObject (archer)
   m_TagString: Untagged
@@ -345,3 +346,31 @@ MonoBehaviour:
   attack_start: attack_start
   attack_target: attack_target
   attack_finish: attack_finish
+  tiltSpeed: 100
+  maxTiltAngle: 80
+--- !u!61 &721660634
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721660628}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.1190414, y: 1.3899014}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8387613, y: 1.562346}
+  m_EdgeRadius: 0
