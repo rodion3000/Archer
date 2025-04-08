@@ -346,8 +346,10 @@ MonoBehaviour:
   attack_start: attack_start
   attack_target: attack_target
   attack_finish: attack_finish
-  tiltSpeed: 100
-  maxTiltAngle: 80
+  arrowPrefab: {fileID: 971274405774349940, guid: 1858ac82009066c4a8092d112488a5e3, type: 3}
+  arrowSpeed: 15
+  tiltSpeed: 90
+  maxTiltAngle: 70
 --- !u!61 &721660634
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -361,7 +363,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.1190414, y: 1.3899014}
+  m_Offset: {x: -1.788579, y: 1.2086802}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -372,5 +374,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8387613, y: 1.562346}
+  m_Size: {x: 3.4996862, y: 1.9247885}
   m_EdgeRadius: 0

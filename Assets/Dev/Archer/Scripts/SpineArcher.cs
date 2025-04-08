@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Spine;
 using Spine.Unity;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class SpineArcher : MonoBehaviour
@@ -17,10 +18,16 @@ public class SpineArcher : MonoBehaviour
     public Skeleton skeleton;
 
     private Bone gunBone; // Ссылка на кость "gun"
+    private Bone bulletBone; // Ссылка на кость "bullet"
+    
+    public GameObject arrowPrefab; // Префаб стрелы
+    public float arrowSpeed = 10f; // Скорость полета стрелы
+
     public float tiltSpeed = 5f; // Скорость наклона
     public float maxTiltAngle = 30f; // Максимальный угол наклона
     private Vector3 lastMousePosition; // Последняя позиция мыши
     private bool isAttacking = false; // Флаг для отслеживания атаки
+    private bool isFinishingAttack = false; // Флаг для отслеживания завершения атаки
 
     private void Start()
     {
@@ -28,20 +35,27 @@ public class SpineArcher : MonoBehaviour
         spineAnimationState = skeletonAnimation.AnimationState;
         skeleton = skeletonAnimation.Skeleton;
 
-        // Получаем ссылку на кость "gun"
         gunBone = skeleton.FindBone("gun");
+        bulletBone = skeleton.FindBone("bullet"); // Получаем ссылку на кость "bullet"
+        
         if (gunBone == null)
         {
             Debug.LogError("Кость 'gun' не найдена!");
         }
+        
+        if (bulletBone == null)
+        {
+            Debug.LogError("Кость 'bullet' не найдена!");
+        }
+
         lastMousePosition = Input.mousePosition; // Инициализируем последнюю позицию мыши
     }
 
     private void Update()
     {
-        if (isAttacking) // Проверяем, идет ли атака
+        if (isAttacking) 
         {
-            Vector3 mouseDelta = Input.mousePosition - lastMousePosition; // Вычисляем изменение позиции мыши
+            Vector3 mouseDelta = Input.mousePosition - lastMousePosition; 
 
             // Изменяем угол наклона в зависимости от перемещения мыши
             if (gunBone != null)
@@ -52,11 +66,16 @@ public class SpineArcher : MonoBehaviour
             }
         }
         
-        lastMousePosition = Input.mousePosition; // Обновляем последнюю позицию мыши
+        lastMousePosition = Input.mousePosition; 
 
-        if (!isAttacking && !IsPlayingIdle()) // Если не атакуем и не в состоянии idle
+        if (!isAttacking && !IsPlayingIdle() && !isFinishingAttack) 
         {
-            PlayerIdleAnimation(); // Переходим в состояние idle
+            PlayerIdleAnimation(); 
+        }
+
+        if (isFinishingAttack && IsPlayingIdle()) 
+        {
+            isFinishingAttack = false; 
         }
     }
 
@@ -67,7 +86,58 @@ public class SpineArcher : MonoBehaviour
         if (currentAnimation == null || currentAnimation.Animation.Name != attack_start)
         {
             spineAnimationState.SetAnimation(0, attack_start, false); 
-            isAttacking = true; // Устанавливаем флаг атаки в true
+            isAttacking = true; 
+        }
+    }
+
+    private void PlayFinishAttack()
+    {
+        var currentAnimation = spineAnimationState.GetCurrent(0);
+        
+        if (currentAnimation == null || currentAnimation.Animation.Name != attack_finish)
+        {
+            spineAnimationState.SetAnimation(0, attack_finish, false);
+            isFinishingAttack = true; 
+            Debug.Log("Запуск анимации завершения атаки");
+
+            ShootArrow(); // Запускаем стрелу при завершении атаки
+        }
+    }
+
+    private void ShootArrow()
+    {
+        if (arrowPrefab != null && bulletBone != null)
+        {
+            // Создаем экземпляр стрелы
+            GameObject arrowInstance = Instantiate(arrowPrefab);
+        
+            // Получаем мировую позицию кости bullet
+            Vector3 bulletPosition = bulletBone.GetWorldPosition(transform);
+        
+            // Устанавливаем позицию стрелы в полученную мировую позицию
+            arrowInstance.transform.position = bulletPosition;
+
+            // Получаем мировое вращение кости bullet
+            Quaternion bulletRotation = bulletBone.GetQuaternion();
+        
+            // Устанавливаем вращение стрелы в соответствии с вращением bulletBone
+            arrowInstance.transform.rotation = bulletRotation;
+
+            // Получаем компонент Rigidbody2D для управления физикой стрелы
+            Rigidbody2D rb = arrowInstance.GetComponent<Rigidbody2D>();
+        
+            if (rb != null)
+            {
+                // Используем направление из вращения для установки скорости
+                Vector2 direction = bulletRotation * Vector2.right; // Используем правый вектор как направление
+                rb.velocity = direction * arrowSpeed; // Устанавливаем скорость полета стрелы
+            }
+        
+            Debug.Log("Стрела вылетела!");
+        }
+        else
+        {
+            Debug.LogError("Префаб стрелы или кость 'bullet' не установлены!");
         }
     }
 
@@ -78,7 +148,7 @@ public class SpineArcher : MonoBehaviour
         if (currentAnimation == null || currentAnimation.Animation.Name != idle)
         {
             spineAnimationState.SetAnimation(0, idle, true); 
-            isAttacking = false; // Сбрасываем флаг атаки при переходе в состояние idle
+            isAttacking = false; 
         }
     }
 
@@ -88,13 +158,14 @@ public class SpineArcher : MonoBehaviour
         return currentAnimation != null && currentAnimation.Animation.Name == idle;
     }
 
-    private void OnMouseDown() // Этот метод вызывается при нажатии на объект с коллайдером
+    private void OnMouseDown() 
     {
         PlayStartAttackAnimation();
     }
 
-    private void OnMouseUp() // Этот метод вызывается при отпускании кнопки мыши
+    private void OnMouseUp() 
     {
-        isAttacking = false; // Сбрасываем флаг атаки при отпускании кнопки мыши
+        isAttacking = false; 
+        PlayFinishAttack(); 
     }
 }
