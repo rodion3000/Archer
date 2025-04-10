@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dev/Archer/Animation/Prefabs/arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dev/Archer/Animation/Prefabs/arrow.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Dev/Archer/Scripts/SpineArcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dev/Archer/Scripts/SpineArcher.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
@@ -16,6 +17,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Dev/Archer/Scripts/Arrow.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -88,6 +92,7 @@
       <workItem from="1743671322887" duration="6071000" />
       <workItem from="1744018529712" duration="5664000" />
       <workItem from="1744092502927" duration="15247000" />
+      <workItem from="1744266579327" duration="12613000" />
     </task>
     <servers />
   </component>
