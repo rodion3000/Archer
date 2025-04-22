@@ -32,7 +32,6 @@ public class SpineArcher : MonoBehaviour
     private bool isAttacking = false; // Флаг для отслеживания атаки
     private bool isFinishingAttack = false; // Флаг для отслеживания завершения атаки
 
-    private Vector3 initialMousePosition; // Начальная позиция мыши
     private float scaleFactor = 1f;
 
     private void Start()
@@ -46,7 +45,6 @@ public class SpineArcher : MonoBehaviour
         string_c = skeleton.FindBone("string_c");
 
         lastMousePosition = Input.mousePosition; // Инициализируем последнюю позицию мыши
-        initialMousePosition = Input.mousePosition; // Инициализируем начальную позицию мыши
     }
 
     private void Update()
@@ -79,7 +77,6 @@ public class SpineArcher : MonoBehaviour
         {
             spineAnimationState.SetAnimation(0, attack_start, false);
             isAttacking = true;
-            initialMousePosition = Input.mousePosition; // Сохраняем начальную позицию при начале атаки
         }
     }
 
@@ -182,7 +179,7 @@ public class SpineArcher : MonoBehaviour
         }
     }
 
-    private bool IsPlayingIdle()
+    public bool IsPlayingIdle()
     {
         var currentAnimation = spineAnimationState.GetCurrent(0);
         return currentAnimation != null && currentAnimation.Animation.Name == idle;
