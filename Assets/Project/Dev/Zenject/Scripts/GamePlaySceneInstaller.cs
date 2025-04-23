@@ -7,14 +7,21 @@ public class GamePlaySceneInstaller : MonoInstaller
 {
     public override void InstallBindings()
     {
-        Container.Bind<GameManager>().AsSingle();
-        Container.Bind<PlayerController>().AsSingle();
-        Container.Bind<PlayerAnimationController>().AsSingle();
-        Container.Bind<PlayerAttack>().AsSingle();
+        Initialize();
+        Player();
+        
     }
 
     private void Player()
     {
-        
+        Container.Bind<PlayerAnimationController>().AsSingle();
+        Container.Bind<PlayerAttack>().AsSingle();
     }
+
+    private void Initialize()
+    {
+        Container.Bind<BootStrap>().AsSingle().NonLazy();
+        Container.Bind<SoundManager>().AsSingle();
+        Container.Bind<GameManager>().AsSingle();
+    } 
 }

@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using Zenject;
 
-public class GameManager : MonoBehaviour
+public class GameManager
 {
-    // Start is called before the first frame update
-    void Start()
+    private SoundManager _soundManager;
+
+    [Inject]
+    private void Construct(SoundManager soundManager)
     {
-        
+        _soundManager = soundManager;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Sound()
     {
-        Debug.Log("dfdf");
+        _soundManager.SoundStart();
     }
+    
 }
