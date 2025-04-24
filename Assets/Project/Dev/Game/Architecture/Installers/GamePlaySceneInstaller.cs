@@ -9,7 +9,6 @@ public class GamePlaySceneInstaller : MonoInstaller
     {
         Initialize();
         Player();
-        
     }
 
     private void Player()
@@ -20,8 +19,8 @@ public class GamePlaySceneInstaller : MonoInstaller
 
     private void Initialize()
     {
-        Container.Bind<BootStrap>().AsSingle().NonLazy();
-        Container.Bind<SoundManager>().AsSingle();
-        Container.Bind<GameManager>().AsSingle();
+        Container.BindInterfacesAndSelfTo<SoundManager>().AsSingle();
+        Container.BindInterfacesAndSelfTo<GameEffect>().AsSingle();
+        Container.Bind<GameManager>().AsSingle().NonLazy();
     } 
 }

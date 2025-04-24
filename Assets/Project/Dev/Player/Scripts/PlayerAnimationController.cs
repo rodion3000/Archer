@@ -96,4 +96,5 @@ public class PlayerAnimationController : MonoBehaviour
         isAttacking = false; 
         PlayFinishAttack(); 
     }
+    
 }
