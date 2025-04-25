@@ -1,7 +1,9 @@
 
+using System;
+using UnityEngine;
 using Zenject;
 
-public class GameManager
+public class GameManager: MonoBehaviour
 {
     private SoundManager _soundManager;
     private GameEffect _gameEffect;
@@ -12,5 +14,9 @@ public class GameManager
         _soundManager = soundManager;
         _gameEffect = gameEffect;
     }
-    
+
+    private void OnMouseDown()
+    {
+        
+    }
 }
