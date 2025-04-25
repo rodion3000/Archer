@@ -1,34 +1,40 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using Spine;
 using Spine.Unity;
 using Zenject;
 
-public class PlayerAttack : MonoBehaviour
+public class PlayerAttack : ITickable, IInitializable
 {
-    public GameObject arrowPrefab; // Префаб стрелы
-    public float arrowSpeed = 10f; // Скорость полета стрелы
-    public float tiltSpeed = 5f; // Скорость наклона
-    public Transform stringObject;
-    public float angleAttackSpeed = 5;
-    public float maxTiltAngle = 30f; // Максимальный угол наклона
+    public GameObject player { get; private set; }
+    public GameObject arrowPrefab { get; private set; } 
+    public float arrowSpeed { get; private set; } 
+    public float tiltSpeed { get; private set; } // Скорость наклона
+    public GameObject stringObject { get; private set; }
+    public float maxTiltAngle { get; private set; } // Максимальный угол наклона
     private float scaleFactor = 1f;
-    private Bone gunBone; // Ссылка на кость "gun"
-    private Bone bulletBone; // Ссылка на кость "bullet"
+    private Bone gunBone; 
+    private Bone bulletBone; 
     private Bone string_c;
-    public Skeleton skeleton;
+    private Skeleton skeleton;
     private SkeletonAnimation skeletonAnimation;
     private Vector3 lastMousePosition; // Последняя позиция мыши
     private PlayerAnimationController _playerAnimationController;
+    private DiContainer _container;
 
     [Inject]
-    private void Construct(PlayerAnimationController playerAnimationController)
+    private void Construct(PlayerAnimationController playerAnimationController, DiContainer container, PlayerAttackConfig config)
     {
         _playerAnimationController = playerAnimationController;
+        _container = container;
+        player = config.player;
+        arrowPrefab = config.arrowPrefab;
+        arrowSpeed = config.arrowSpeed;
+        tiltSpeed = config.tiltSpeed;
+        stringObject = config.stringObject;
+        maxTiltAngle = config.maxTiltAngle;
     }
-    private void Start()
+    public void Initialize()
     {
         skeleton = skeletonAnimation.Skeleton;
         gunBone = skeleton.FindBone("gun");
@@ -37,7 +43,7 @@ public class PlayerAttack : MonoBehaviour
         lastMousePosition = Input.mousePosition; // Инициализируем последнюю позицию мыши
     }
 
-    private void Update()
+    public void Tick()
     {
         Attack();
         lastMousePosition = Input.mousePosition;
@@ -68,7 +74,7 @@ public class PlayerAttack : MonoBehaviour
         Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
 
         // Вычисляем расстояние по оси X между позицией объекта и позицией мыши
-        float distanceX = transform.position.x - mouseWorldPosition.x;
+        float distanceX = player.transform.position.x - mouseWorldPosition.x;
 
         // Проверяем, находится ли мышь слева от объекта
         if (distanceX > 0)
@@ -89,7 +95,7 @@ public class PlayerAttack : MonoBehaviour
     
     private void stringPositionAndIncrease()
     {
-        Vector3 stringPos = string_c.GetWorldPosition(transform);
+        Vector3 stringPos = string_c.GetWorldPosition(player.transform);
         stringObject.transform.position = stringPos + new Vector3(1.5f, -0.6f, 0);
         
         var stringRot = string_c.WorldRotationY;
@@ -99,19 +105,16 @@ public class PlayerAttack : MonoBehaviour
     {
         if (arrowPrefab != null && bulletBone != null)
         {
-            GameObject arrowInstance = Instantiate(arrowPrefab);
-            Vector3 bulletPosition = bulletBone.GetWorldPosition(transform);
-            arrowInstance.transform.position = bulletPosition;
-            float bulletRotation = bulletBone.WorldRotationY;
-            arrowInstance.transform.rotation = Quaternion.Euler(0, 0, bulletRotation - 180f);
-            Rigidbody2D rb = arrowInstance.GetComponent<Rigidbody2D>();
+            // Создаем экземпляр стрелы с помощью контейнера
+            GameObject arrowInstance = _container.InstantiatePrefab(arrowPrefab, bulletBone.GetWorldPosition(player.transform), Quaternion.Euler(0, 0, bulletBone.WorldRotationY - 180f), null);
         
+            Rigidbody2D rb = arrowInstance.GetComponent<Rigidbody2D>();
+    
             if (rb != null)
             {
-                Vector2 direction = Quaternion.Euler(0, 0, bulletRotation - 90f) * Vector2.right; 
+                Vector2 direction = Quaternion.Euler(0, 0, bulletBone.WorldRotationY - 90f) * Vector2.right; 
                 rb.velocity = direction * arrowSpeed * scaleFactor; 
             }
-            
         }
     }
 }

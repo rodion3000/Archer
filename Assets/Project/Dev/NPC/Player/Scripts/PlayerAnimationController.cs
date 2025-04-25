@@ -6,15 +6,15 @@ using Spine;
 using Spine.Unity;
 using Zenject;
 
-public class PlayerAnimationController : MonoBehaviour
+public class PlayerAnimationController : ITickable, IInitializable
 {
-    [SpineAnimation] public string idle;
-    [SpineAnimation] public string attack_start;
-    [SpineAnimation] public string attack_target;
-    [SpineAnimation] public string attack_finish;
+    [field: SpineAnimation] public string idle { get; private set; }
+    [field: SpineAnimation] public string attack_start { get; private set; }
+    [field: SpineAnimation] public string attack_target { get; private set; }
+    [field: SpineAnimation] public string attack_finish { get; private set; }
 
-    private SkeletonAnimation skeletonAnimation;
-    public Spine.AnimationState spineAnimationState;
+    public SkeletonAnimation skeletonAnimation { get; private set; }
+    private Spine.AnimationState spineAnimationState;
     public bool isAttacking { get; private set; } = false; 
     private bool isFinishingAttack = false; 
     
@@ -25,13 +25,12 @@ public class PlayerAnimationController : MonoBehaviour
     {
         _playerAttack = playerAttack;
     }
-    private void Start()
+    public void Initialize()
     {
-        skeletonAnimation = GetComponent<SkeletonAnimation>();
         spineAnimationState = skeletonAnimation.AnimationState;
     }
 
-    private void Update()
+    public void Tick()
     {
         if (isFinishingAttack)
         {
@@ -96,5 +95,4 @@ public class PlayerAnimationController : MonoBehaviour
         isAttacking = false; 
         PlayFinishAttack(); 
     }
-    
 }

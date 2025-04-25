@@ -14,8 +14,8 @@ public class SpineArcher : MonoBehaviour
     [SpineAnimation] public string attack_finish;
 
     private SkeletonAnimation skeletonAnimation;
-    public Spine.AnimationState spineAnimationState;
-    public Skeleton skeleton;
+    private Spine.AnimationState spineAnimationState;
+    private Skeleton skeleton;
 
     private Bone gunBone; // Ссылка на кость "gun"
     private Bone bulletBone; // Ссылка на кость "bullet"
@@ -26,7 +26,6 @@ public class SpineArcher : MonoBehaviour
     public Transform stringObject;
 
     public float tiltSpeed = 5f; // Скорость наклона
-    public float angleAttackSpeed = 5;
     public float maxTiltAngle = 30f; // Максимальный угол наклона
     private Vector3 lastMousePosition; // Последняя позиция мыши
     private bool isAttacking = false; // Флаг для отслеживания атаки
