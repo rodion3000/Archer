@@ -4,16 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using Spine;
 using Spine.Unity;
+using UnityEngine.EventSystems;
 using Zenject;
 
-public class PlayerAnimationController : ITickable, IInitializable
+public class PlayerAnimationController : MonoBehaviour
 {
-    [field: SpineAnimation] public string idle { get; private set; }
-    [field: SpineAnimation] public string attack_start { get; private set; }
-    [field: SpineAnimation] public string attack_target { get; private set; }
-    [field: SpineAnimation] public string attack_finish { get; private set; }
+    [SpineAnimation] public string idle;
+    [SpineAnimation] public string attack_start;
+    [SpineAnimation] public string attack_target;
+    [SpineAnimation] public string attack_finish;
 
-    public SkeletonAnimation skeletonAnimation { get; private set; }
+    public SkeletonAnimation skeletonAnimation;
     private Spine.AnimationState spineAnimationState;
     public bool isAttacking { get; private set; } = false; 
     private bool isFinishingAttack = false; 
@@ -74,7 +75,6 @@ public class PlayerAnimationController : ITickable, IInitializable
         {
             spineAnimationState.SetAnimation(0, attack_finish, false);
             isFinishingAttack = true; 
-            Debug.Log("Запуск анимации завершения атаки");
 
             _playerAttack.ShootArrow(); // Запускаем стрелу при завершении атаки
         }

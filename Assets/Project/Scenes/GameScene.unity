@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 338708573}
   - component: {fileID: 338708572}
-  - component: {fileID: 338708571}
   m_Layer: 0
   m_Name: SceneContext
   m_TagString: Untagged
@@ -141,20 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &338708571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338708570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72202b16cfdacd40aced3222a3a9198, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerAttackConfig: {fileID: 11400000, guid: 6ae3d8fed019e1c449f8e929d3fca4fd, type: 2}
-  _playerAnimationConfig: {fileID: 0}
 --- !u!114 &338708572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,8 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scriptableObjectInstallers: []
-  _monoInstallers:
-  - {fileID: 338708571}
+  _monoInstallers: []
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -300,6 +284,10 @@ PrefabInstance:
     - target: {fileID: 1673492263325779171, guid: 6fd5ebe317e648c4989a1a6f2e94cce3, type: 3}
       propertyPath: m_Name
       value: Spine GameObject (archer)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1673492263325779182, guid: 6fd5ebe317e648c4989a1a6f2e94cce3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1673492263325779183, guid: 6fd5ebe317e648c4989a1a6f2e94cce3, type: 3}
       propertyPath: m_RootOrder

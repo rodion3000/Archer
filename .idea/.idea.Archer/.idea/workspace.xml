@@ -6,94 +6,116 @@
   <component name="ChangeListManager">
     <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Architecture/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Game/Architecture/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Architecture/Installers/GamePlaySceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Game/Architecture/Installers/GamePlaySceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer.atlas.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer.atlas.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_Atlas.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_Atlas.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_SkeletonData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_SkeletonData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet.atlas.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet.atlas.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet_Atlas.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet_Atlas.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet_Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet_Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet_SkeletonData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Archer_Json/archer_bullet_SkeletonData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Prefabs/arrow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Prefabs/arrow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Prefabs/string.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/Prefabs/string.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/arm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/arm.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/arrow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/body.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/body.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/bow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/bow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/bow2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/bow2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/head.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/head.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/leg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/leg.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0000.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0001.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0002.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0003.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0004.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0005.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0006.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0007.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0008.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/splash/splash_0009.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/string.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer/string.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer_с.spine" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Animation/archer/archer_с.spine.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Scripts/Arrow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Scripts/Arrow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Scripts/PlayerAnimationController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Scripts/PlayerAnimationController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Scripts/PlayerAttack.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Scripts/PlayerAttack.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Scripts/SpineArcher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/Scripts/SpineArcher.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/arrow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Player/point.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Config/PlayerConfig/PlayerAnimationConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Config/PlayerConfig/PlayerAnimationConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Config/PlayerConfig/Scripts/PlayerAnimationConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Config/PlayerConfig/Scripts/PlayerAnimationConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Architecture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Architecture/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Architecture/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Architecture/Installers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Architecture/Installers/GamePlaySceneInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Architecture/Installers/GamePlaySceneInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Architecture/Interfaces.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Effect.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Effect/GameEffect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Effect/GameEffect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Sound.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Sound/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Sound/Scripts/SoundManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Sound/Scripts/SoundManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer.atlas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer.atlas.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_Atlas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_Atlas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_SkeletonData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_SkeletonData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet.atlas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet.atlas.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet_Atlas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet_Atlas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet_SkeletonData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Archer_Json/archer_bullet_SkeletonData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Prefabs/arrow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Prefabs/arrow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Prefabs/string.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/Prefabs/string.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/arm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/arm.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/body.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/body.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/bow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/bow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/bow2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/bow2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/head.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/leg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/leg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0002.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0003.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0004.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0005.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0006.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0007.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0008.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/splash/splash_0009.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/string.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer/string.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer_с.spine" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Animation/archer/archer_с.spine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Prefabs/Spine GameObject (archer).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Prefabs/Spine GameObject (archer).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Prefabs/string.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Prefabs/string.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Scripts/Arrow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Scripts/Arrow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Scripts/PlayerAnimationController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Scripts/PlayerAnimationController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Scripts/PlayerAttack.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Scripts/PlayerAttack.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Scripts/SpineArcher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/Scripts/SpineArcher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/NPC/Player/point.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/GameScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,9 +127,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Config/PlayerConfig/Scripts/PlayerAnimationConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Game/Effect/GameEffect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Game/Sound/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1a6c28ace9804a50be10b2a1d5a4e4ee3d200/41/7557d8a5/IPointerClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f5b293c74049457cabc28437c5a763925a00/b3/f3f6bea0/ITickable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -186,7 +206,9 @@
       <workItem from="1745214777366" duration="11823000" />
       <workItem from="1745319026187" duration="1225000" />
       <workItem from="1745477168402" duration="11339000" />
-      <workItem from="1745558191316" duration="9774000" />
+      <workItem from="1745558191316" duration="10981000" />
+      <workItem from="1745822993281" duration="8203000" />
+      <workItem from="1746424685884" duration="7069000" />
     </task>
     <servers />
   </component>
