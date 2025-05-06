@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
-public class GamePlay : MonoInstaller
+public class GameStateMachineInstaller : MonoInstaller
 {
     public override void InstallBindings()
     {

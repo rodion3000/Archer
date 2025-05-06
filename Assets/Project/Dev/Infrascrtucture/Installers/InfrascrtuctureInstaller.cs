@@ -4,7 +4,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using Zenject;
 
-public class Infrascrtucture : MonoInstaller
+public class InfrascrtuctureInstaller : MonoInstaller
 {
     [SerializeField] private GameObject curtainServicePrefab;
     public override void InstallBindings()

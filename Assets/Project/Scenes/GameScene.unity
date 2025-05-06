@@ -283,7 +283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1673492263325779171, guid: 6fd5ebe317e648c4989a1a6f2e94cce3, type: 3}
       propertyPath: m_Name
-      value: Spine GameObject (archer)
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1673492263325779182, guid: 6fd5ebe317e648c4989a1a6f2e94cce3, type: 3}
       propertyPath: m_Enabled
