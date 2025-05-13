@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Game/Services/CurtainService/CurtainService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Game/Services/CurtainService/CurtainService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/GamePlayInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/GamePlayInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/GameStateMachineInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/GameStateMachineInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Resources/ProjectContext.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Resources/ProjectContext.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/GameSceneInstaller/GameSceneInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1a6c28ace9804a50be10b2a1d5a4e4ee3d200/41/7557d8a5/IPointerClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f5b293c74049457cabc28437c5a763925a00/b3/f3f6bea0/ITickable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -101,6 +106,9 @@
       <workItem from="1745822993281" duration="8203000" />
       <workItem from="1746424685884" duration="9319000" />
       <workItem from="1746818893100" duration="1665000" />
+      <workItem from="1746959143690" duration="2697000" />
+      <workItem from="1747030263824" duration="12330000" />
+      <workItem from="1747120391528" duration="2312000" />
     </task>
     <servers />
   </component>
