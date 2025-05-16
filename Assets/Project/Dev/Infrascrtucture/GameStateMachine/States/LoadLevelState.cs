@@ -1,20 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using Project.Dev.Infrastructure.GameStateMachine.Interface;
+using UnityEngine;
 
 namespace Project.Dev.Infrastructure.GameStateMachine.States
 {
-    public class BootstrapState : IState
+    public class LoadLevelState : IState
     {
         public void Exit()
         {
-        
+            
         }
 
         public void Enter()
         {
-        
+            
         }
     }
 }

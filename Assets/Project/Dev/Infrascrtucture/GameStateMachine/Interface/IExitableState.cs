@@ -1,5 +1,8 @@
-
-public interface IExitableState 
+namespace Project.Dev.Infrastructure.GameStateMachine.Interface
 {
-    void Exit();
+    public interface IExitableState 
+    {
+        void Exit();
+    }
 }
+

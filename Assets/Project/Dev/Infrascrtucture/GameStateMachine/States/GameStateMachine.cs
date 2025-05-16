@@ -1,18 +1,15 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
-using UnityEngine;
+using Zenject;
+using Project.Dev.Infrastructure.Factories;
 using Project.Dev.Infrastructure.GameStateMachine.Interface;
+using Project.Dev.Services.Logging;
 
 namespace Project.Dev.Infrastructure.GameStateMachine.States
 {
-    public class BootstrapState : IState
+    public class GameStateMachine: IInitializable
     {
-        public void Exit()
-        {
-        
-        }
-
-        public void Enter()
+        public void Initialize()
         {
         
         }
