@@ -6,9 +6,9 @@ using Zenject;
 
 public class PlayerAttack : ITickable, IInitializable
 {
-    public GameObject player { get; private set; }
-    public GameObject arrowPrefab { get; private set; } 
-    public float arrowSpeed { get; private set; } 
+    private readonly GameObject player;
+    private readonly GameObject arrowPrefab;
+    public float arrowSpeed { get; private set; }
     public float tiltSpeed { get; private set; } // Скорость наклона
     public GameObject stringObject { get; private set; }
     public float maxTiltAngle { get; private set; } // Максимальный угол наклона
@@ -23,17 +23,17 @@ public class PlayerAttack : ITickable, IInitializable
     private DiContainer _container;
 
     [Inject]
-    private void Construct(PlayerAnimationController playerAnimationController, DiContainer container, PlayerAttackConfig config)
-    {
-        _playerAnimationController = playerAnimationController;
-        _container = container;
-        player = config.player;
-        arrowPrefab = config.arrowPrefab;
-        arrowSpeed = config.arrowSpeed;
-        tiltSpeed = config.tiltSpeed;
-        stringObject = config.stringObject;
-        maxTiltAngle = config.maxTiltAngle;
-    }
+   // private void Construct(PlayerAnimationController playerAnimationController, DiContainer container, HeroLocalData config)
+   // {
+   //     _playerAnimationController = playerAnimationController;
+   //     _container = container;
+    //    player = config.player;
+    //    arrowPrefab = config.arrowPrefab;
+     //   arrowSpeed = config.arrowSpeed;
+     //   tiltSpeed = config.tiltSpeed;
+      //  stringObject = config.stringObject;
+      //  maxTiltAngle = config.maxTiltAngle;
+  //  }//
     public void Initialize()
     {
         skeleton = skeletonAnimation.Skeleton;
