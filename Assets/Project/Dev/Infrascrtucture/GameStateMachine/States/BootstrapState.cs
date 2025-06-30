@@ -1,12 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using Project.Dev.Infrastructure.GameStateMachine.Interface;
 using Project.Dev.Services.Interfaces;
-using UnityEditor.VersionControl;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using Zenject;
+using Project.Dev.Infrastructure.GameStateMachine.TaskExtensions;
 
 namespace Project.Dev.Infrastructure.GameStateMachine.States
 {
@@ -27,11 +23,20 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
 
         public void Enter()
         {
+            _ = InitializeServices().ProcessErrors();
 
 
         }
 
-        
+        private async Task InitializeServices()
+        {
+            foreach (var service in _initializableServices)
+                await service.InitializeAsync();
+
+            _stateMachine.Enter<LoadProgresState>();
+        }
+
+
     }
 }
 
