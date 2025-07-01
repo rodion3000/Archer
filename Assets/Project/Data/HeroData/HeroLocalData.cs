@@ -1,5 +1,6 @@
 using UnityEngine.AddressableAssets;
 using UnityEngine;
+using Zenject;
 
 namespace Project.Data.HeroLocalData
 {
