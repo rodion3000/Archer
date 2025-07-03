@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/HeroLocalData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Data/HeroData/HeroLocalData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +128,9 @@
       <workItem from="1751004248674" duration="7804000" />
       <workItem from="1751264021419" duration="5778000" />
       <workItem from="1751278749396" duration="671000" />
-      <workItem from="1751349796668" duration="6665000" />
+      <workItem from="1751349796668" duration="6671000" />
+      <workItem from="1751438198830" duration="64000" />
+      <workItem from="1751438269646" duration="10321000" />
     </task>
     <servers />
   </component>
