@@ -5,193 +5,199 @@ using Spine;
 using Spine.Unity;
 using Unity.Mathematics;
 using UnityEngine;
+using AnimationState = Spine.AnimationState;
 
-public class SpineArcher : MonoBehaviour
+namespace Project.Dev.GamePlay.NPC.Player
 {
-    [SpineAnimation] public string idle;
-    [SpineAnimation] public string attack_start;
-    [SpineAnimation] public string attack_target;
-    [SpineAnimation] public string attack_finish;
-
-    private SkeletonAnimation skeletonAnimation;
-    private Spine.AnimationState spineAnimationState;
-    private Skeleton skeleton;
-
-    private Bone gunBone; // Ссылка на кость "gun"
-    private Bone bulletBone; // Ссылка на кость "bullet"
-    private Bone string_c;
-
-    public GameObject arrowPrefab; // Префаб стрелы
-    public float arrowSpeed = 10f; // Скорость полета стрелы
-    public Transform stringObject;
-
-    public float tiltSpeed = 5f; // Скорость наклона
-    public float maxTiltAngle = 30f; // Максимальный угол наклона
-    private Vector3 lastMousePosition; // Последняя позиция мыши
-    private bool isAttacking = false; // Флаг для отслеживания атаки
-    private bool isFinishingAttack = false; // Флаг для отслеживания завершения атаки
-
-    private float scaleFactor = 1f;
-
-    private void Start()
+    public class SpineArcher : MonoBehaviour
     {
-        skeletonAnimation = GetComponent<SkeletonAnimation>();
-        spineAnimationState = skeletonAnimation.AnimationState;
-        skeleton = skeletonAnimation.Skeleton;
+        [SpineAnimation] public string idle;
+        [SpineAnimation] public string attack_start;
+        [SpineAnimation] public string attack_target;
+        [SpineAnimation] public string attack_finish;
 
-        gunBone = skeleton.FindBone("gun");
-        bulletBone = skeleton.FindBone("bullet");
-        string_c = skeleton.FindBone("string_c");
+        private SkeletonAnimation skeletonAnimation;
+        private AnimationState spineAnimationState;
+        private Skeleton skeleton;
 
-        lastMousePosition = Input.mousePosition; // Инициализируем последнюю позицию мыши
-    }
+        private Bone gunBone; // Ссылка на кость "gun"
+        private Bone bulletBone; // Ссылка на кость "bullet"
+        private Bone string_c;
 
-    private void Update()
-    {
-        Attack();
+        public GameObject arrowPrefab; // Префаб стрелы
+        public float arrowSpeed = 10f; // Скорость полета стрелы
+        public Transform stringObject;
 
-        lastMousePosition = Input.mousePosition;
+        public float tiltSpeed = 5f; // Скорость наклона
+        public float maxTiltAngle = 30f; // Максимальный угол наклона
+        private Vector3 lastMousePosition; // Последняя позиция мыши
+        private bool isAttacking = false; // Флаг для отслеживания атаки
+        private bool isFinishingAttack = false; // Флаг для отслеживания завершения атаки
 
-        // Проверяем состояние атаки и завершаем атаку
-        if (isFinishingAttack)
+        private float scaleFactor = 1f;
+
+        private void Start()
+        {
+            skeletonAnimation = GetComponent<SkeletonAnimation>();
+            spineAnimationState = skeletonAnimation.AnimationState;
+            skeleton = skeletonAnimation.Skeleton;
+
+            gunBone = skeleton.FindBone("gun");
+            bulletBone = skeleton.FindBone("bullet");
+            string_c = skeleton.FindBone("string_c");
+
+            lastMousePosition = Input.mousePosition; // Инициализируем последнюю позицию мыши
+        }
+
+        private void Update()
+        {
+            Attack();
+
+            lastMousePosition = Input.mousePosition;
+
+            // Проверяем состояние атаки и завершаем атаку
+            if (isFinishingAttack)
+            {
+                var currentAnimation = spineAnimationState.GetCurrent(0);
+                if (currentAnimation != null && currentAnimation.Animation.Name == attack_finish &&
+                    currentAnimation.IsComplete)
+                {
+                    isFinishingAttack = false;
+                    PlayerIdleAnimation(); // Переход к idle после завершения атаки
+                }
+            }
+            else if (!isAttacking && !IsPlayingIdle())
+            {
+                PlayerIdleAnimation();
+            }
+        }
+
+        private void PlayStartAttackAnimation()
         {
             var currentAnimation = spineAnimationState.GetCurrent(0);
-            if (currentAnimation != null && currentAnimation.Animation.Name == attack_finish && currentAnimation.IsComplete)
+
+            if (currentAnimation == null || currentAnimation.Animation.Name != attack_start)
             {
-                isFinishingAttack = false;
-                PlayerIdleAnimation(); // Переход к idle после завершения атаки
+                spineAnimationState.SetAnimation(0, attack_start, false);
+                isAttacking = true;
             }
         }
-        else if (!isAttacking && !IsPlayingIdle())
+
+        private void Attack()
         {
-            PlayerIdleAnimation();
-        }
-    }
-
-    private void PlayStartAttackAnimation()
-    {
-        var currentAnimation = spineAnimationState.GetCurrent(0);
-
-        if (currentAnimation == null || currentAnimation.Animation.Name != attack_start)
-        {
-            spineAnimationState.SetAnimation(0, attack_start, false);
-            isAttacking = true;
-        }
-    }
-
-    private void Attack()
-    {
-        if (isAttacking)
-        {
-            Vector3 mouseDelta = Input.mousePosition - lastMousePosition;
-
-            // Изменяем угол наклона в зависимости от перемещения мыши
-            if (gunBone != null)
+            if (isAttacking)
             {
-                float newAngle = gunBone.Rotation + (-mouseDelta.y * tiltSpeed * Time.deltaTime);
-                newAngle = Mathf.Clamp(newAngle, -maxTiltAngle, maxTiltAngle); // Ограничиваем угол наклона
-                gunBone.Rotation = newAngle;
+                Vector3 mouseDelta = Input.mousePosition - lastMousePosition;
 
-                AdjustStringLength();
-                stringPositionAndIncrease();
+                // Изменяем угол наклона в зависимости от перемещения мыши
+                if (gunBone != null)
+                {
+                    float newAngle = gunBone.Rotation + (-mouseDelta.y * tiltSpeed * Time.deltaTime);
+                    newAngle = Mathf.Clamp(newAngle, -maxTiltAngle, maxTiltAngle); // Ограничиваем угол наклона
+                    gunBone.Rotation = newAngle;
+
+                    AdjustStringLength();
+                    stringPositionAndIncrease();
+                }
             }
         }
-    }
 
-    private void AdjustStringLength()
-    {
-        // Получаем текущую позицию мыши в мировых координатах
-        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
-
-        // Вычисляем расстояние по оси X между позицией объекта и позицией мыши
-        float distanceX = transform.position.x - mouseWorldPosition.x;
-
-        // Проверяем, находится ли мышь слева от объекта
-        if (distanceX > 0)
+        private void AdjustStringLength()
         {
-            // Устанавливаем масштаб линии натяжения в зависимости от расстояния
-            scaleFactor = Mathf.Clamp(distanceX / 2f, 1f, 3f); // Измените делитель и пределы по необходимости
+            // Получаем текущую позицию мыши в мировых координатах
+            Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,
+                Input.mousePosition.y, Camera.main.nearClipPlane));
 
-            // Увеличиваем линию натяжения по оси X (или Y в зависимости от вашей логики)
-            stringObject.transform.localScale = new Vector3(1, scaleFactor, 1f); 
-        }
-        else
-        {
-            // Если мышь справа от объекта, устанавливаем масштаб на минимальное значение
-            stringObject.transform.localScale = new Vector3(1f, 1f, 1f);
-            scaleFactor = 1f; // Сбрасываем scaleFactor
-        }
-    }
+            // Вычисляем расстояние по оси X между позицией объекта и позицией мыши
+            float distanceX = transform.position.x - mouseWorldPosition.x;
 
-
-    private void stringPositionAndIncrease()
-    {
-        Vector3 stringPos = string_c.GetWorldPosition(transform);
-        stringObject.transform.position = stringPos + new Vector3(1.5f, -0.6f, 0);
-        
-        var stringRot = string_c.WorldRotationY;
-        stringObject.transform.rotation = Quaternion.Euler(0, 0, stringRot);
-    }
-
-    private void PlayFinishAttack()
-    {
-        var currentAnimation = spineAnimationState.GetCurrent(0);
-        
-        if (currentAnimation == null || currentAnimation.Animation.Name != attack_finish)
-        {
-            spineAnimationState.SetAnimation(0, attack_finish, false);
-            isFinishingAttack = true; 
-            Debug.Log("Запуск анимации завершения атаки");
-
-            ShootArrow(); // Запускаем стрелу при завершении атаки
-        }
-    }
-
-    private void ShootArrow()
-    {
-        if (arrowPrefab != null && bulletBone != null)
-        {
-            GameObject arrowInstance = Instantiate(arrowPrefab);
-            Vector3 bulletPosition = bulletBone.GetWorldPosition(transform);
-            arrowInstance.transform.position = bulletPosition;
-            float bulletRotation = bulletBone.WorldRotationY;
-            arrowInstance.transform.rotation = Quaternion.Euler(0, 0, bulletRotation - 180f);
-            Rigidbody2D rb = arrowInstance.GetComponent<Rigidbody2D>();
-        
-            if (rb != null)
+            // Проверяем, находится ли мышь слева от объекта
+            if (distanceX > 0)
             {
-                Vector2 direction = Quaternion.Euler(0, 0, bulletRotation - 90f) * Vector2.right; 
-                rb.velocity = direction * arrowSpeed * scaleFactor; // Умножаем скорость на scaleFactor
+                // Устанавливаем масштаб линии натяжения в зависимости от расстояния
+                scaleFactor = Mathf.Clamp(distanceX / 2f, 1f, 3f); // Измените делитель и пределы по необходимости
+
+                // Увеличиваем линию натяжения по оси X (или Y в зависимости от вашей логики)
+                stringObject.transform.localScale = new Vector3(1, scaleFactor, 1f);
             }
-            
+            else
+            {
+                // Если мышь справа от объекта, устанавливаем масштаб на минимальное значение
+                stringObject.transform.localScale = new Vector3(1f, 1f, 1f);
+                scaleFactor = 1f; // Сбрасываем scaleFactor
+            }
         }
-    }
 
-    private void PlayerIdleAnimation()
-    {
-        var currentAnimation = spineAnimationState.GetCurrent(0);
-        
-        if (currentAnimation == null || currentAnimation.Animation.Name != idle)
+
+        private void stringPositionAndIncrease()
         {
-            spineAnimationState.SetAnimation(0, idle, true); 
-            isAttacking = false; 
+            Vector3 stringPos = string_c.GetWorldPosition(transform);
+            stringObject.transform.position = stringPos + new Vector3(1.5f, -0.6f, 0);
+
+            var stringRot = string_c.WorldRotationY;
+            stringObject.transform.rotation = Quaternion.Euler(0, 0, stringRot);
         }
-    }
 
-    public bool IsPlayingIdle()
-    {
-        var currentAnimation = spineAnimationState.GetCurrent(0);
-        return currentAnimation != null && currentAnimation.Animation.Name == idle;
-    }
+        private void PlayFinishAttack()
+        {
+            var currentAnimation = spineAnimationState.GetCurrent(0);
 
-    private void OnMouseDown() 
-    {
-        PlayStartAttackAnimation();
-    }
+            if (currentAnimation == null || currentAnimation.Animation.Name != attack_finish)
+            {
+                spineAnimationState.SetAnimation(0, attack_finish, false);
+                isFinishingAttack = true;
+                Debug.Log("Запуск анимации завершения атаки");
 
-    private void OnMouseUp() 
-    {
-        isAttacking = false; 
-        PlayFinishAttack(); 
+                ShootArrow(); // Запускаем стрелу при завершении атаки
+            }
+        }
+
+        private void ShootArrow()
+        {
+            if (arrowPrefab != null && bulletBone != null)
+            {
+                GameObject arrowInstance = Instantiate(arrowPrefab);
+                Vector3 bulletPosition = bulletBone.GetWorldPosition(transform);
+                arrowInstance.transform.position = bulletPosition;
+                float bulletRotation = bulletBone.WorldRotationY;
+                arrowInstance.transform.rotation = Quaternion.Euler(0, 0, bulletRotation - 180f);
+                Rigidbody2D rb = arrowInstance.GetComponent<Rigidbody2D>();
+
+                if (rb != null)
+                {
+                    Vector2 direction = Quaternion.Euler(0, 0, bulletRotation - 90f) * Vector2.right;
+                    rb.velocity = direction * arrowSpeed * scaleFactor; // Умножаем скорость на scaleFactor
+                }
+
+            }
+        }
+
+        private void PlayerIdleAnimation()
+        {
+            var currentAnimation = spineAnimationState.GetCurrent(0);
+
+            if (currentAnimation == null || currentAnimation.Animation.Name != idle)
+            {
+                spineAnimationState.SetAnimation(0, idle, true);
+                isAttacking = false;
+            }
+        }
+
+        public bool IsPlayingIdle()
+        {
+            var currentAnimation = spineAnimationState.GetCurrent(0);
+            return currentAnimation != null && currentAnimation.Animation.Name == idle;
+        }
+
+        private void OnMouseDown()
+        {
+            PlayStartAttackAnimation();
+        }
+
+        private void OnMouseUp()
+        {
+            isAttacking = false;
+            PlayFinishAttack();
+        }
     }
 }

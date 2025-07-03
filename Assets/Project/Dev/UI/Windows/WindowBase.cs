@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using JetBrains.Annotations;
 using Sirenix.OdinInspector;
@@ -10,57 +9,89 @@ using DG.Tweening;
 
 namespace Project.Dev.UI.Windows
 {
-    public abstract  class WindowBase : MonoBehaviour
+    [RequireComponent(typeof(CanvasGroup))]
+    public abstract class WindowBase : MonoBehaviour
     {
+        private const string ClickEffectKey = "SFX_buttonClick";
+
+        [Title("Appearance settings")]
         [SerializeField] private CanvasGroup canvasGroup;
-        [SerializeField] [CanBeNull] private RectTransform window;
-        [SerializeField] [Range(1f, 10f)] private float init;
-        [SerializeField] [Range(0.1f, 1f)] private float open;
+        [SerializeField] [CanBeNull] private RectTransform windowPanel;
+        [SerializeField] [Range(0.1f, 10f)] private float openingDuration;
+        [SerializeField] [Range(0f, 1f)] private float openingInitialScale;
 
-        [SerializeField] protected TextMeshProUGUI tiles;
-        [SerializeField] protected TextMeshProUGUI dataText;
+        [Title("Text elements")]
+        [SerializeField] protected TextMeshProUGUI windowTitle;
+        [SerializeField] protected TextMeshProUGUI windowText;
 
-        protected bool accepted;
+        protected bool UserAccepted;
         protected Promise<bool> Promise;
 
-        private void Awake() => kjh();
+        [Inject]
+        private void Construct()
+        {
+            // sound service
+        }
+
+        private void Awake() =>
+            SetInitialAppearance();
+
+        public virtual Promise<bool> InitAndShow<T>(T data, string titleText = "")
+        {
+            var text = data as string;
+
+            if (windowTitle && !string.IsNullOrEmpty(titleText))
+                windowTitle.text = titleText;
+
+            if (windowText && !string.IsNullOrEmpty(text))
+                windowText.text = text;
+
+            SetVisible(true);
+
+            return Promise = new Promise<bool>();
+        }
+
+        protected virtual void Close() =>
+            SetVisible(false)
+                .Then(() =>
+                    Promise.ResolveIfPending(UserAccepted));
 
 
+        protected void PlaySoundEffect()
+        {
+            // _soundService.Play(clickEffectKey)
+        }
 
-        private void kjh()
+        protected void PlayHapticEffect()
+        {
+            // _hapticService.Play(clickEffectKey)
+        }
+
+        private void SetInitialAppearance()
         {
             if (canvasGroup) (canvasGroup.blocksRaycasts, canvasGroup.alpha) = (false, 0);
-            if (window) window.localScale = Vector3.one * open;
+            if (windowPanel) windowPanel.localScale = Vector3.one * openingInitialScale;
         }
 
         private Promise SetVisible(bool value)
         {
             if (canvasGroup) canvasGroup.blocksRaycasts = value;
+
             var animationPromise = new Promise();
 
+            DOTween.Sequence()
+                .Append(canvasGroup?
+                    .DOFade(value ? 1 : 0, openingDuration)
+                    .SetEase(Ease.OutQuad))
+                .Join(windowPanel?
+                    .DOScale(Vector3.one * (value ? 1 : 0.5f), openingDuration)
+                    .SetEase(value ? Ease.OutBounce : Ease.OutQuad))
+                .Play()
+                .onComplete += () =>
+                    animationPromise.ResolveIfPending();
+
+            return animationPromise;
         }
-
-
-        public virtual Promise<bool> Joi<T>(T data, string tile)
-        {
-            var ddata = data as string;
-
-            if (tiles && string.IsNullOrEmpty(tile))
-                tiles.text = tile;
-            if (dataText && string.IsNullOrEmpty(ddata))
-                dataText.text = ddata;
-
-            SetVisible(true);
-
-            return Promise = new Promise<bool>();
-
-
-
-
-        }
-
-
-
     }
 }
 
