@@ -27,9 +27,9 @@ namespace Project.Dev.GamePlay.NPC.Player
         public GameObject arrowPrefab; // Префаб стрелы
         public float arrowSpeed = 10f; // Скорость полета стрелы
         public Transform stringObject;
-
         public float tiltSpeed = 5f; // Скорость наклона
         public float maxTiltAngle = 30f; // Максимальный угол наклона
+
         private Vector3 lastMousePosition; // Последняя позиция мыши
         private bool isAttacking = false; // Флаг для отслеживания атаки
         private bool isFinishingAttack = false; // Флаг для отслеживания завершения атаки

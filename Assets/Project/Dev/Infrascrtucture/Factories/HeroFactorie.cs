@@ -1,28 +1,51 @@
 using System.Threading.Tasks;
+using JetBrains.Annotations;
 using Project.Dev.Infrastructure.Factories.Interfaces;
 using UnityEngine;
 using Project.Dev.Infrastructure.Factories.FunctionalExtensions;
 using Project.Dev.GamePlay.NPC.Player;
 using Project.Dev.Infrastructure.AssetManager;
+using Project.Dev.Services.StaticDataService;
+using Unity.Mathematics;
+using Zenject;
 
 namespace Project.Dev.Infrastructure.Factories
 {
     public class HeroFactorie : IHeroFactory
     {
-        public GameObject Hero { get; }
-        public Task WarmUp()
+        private const string heroPrefabId = "Player";
+        private readonly IStaticDataService _staticDataService;
+        private readonly IAssetProvider _assetProvider;
+        private readonly DiContainer _container;
+
+        [CanBeNull] public GameObject Hero { get; private set; }
+
+        public HeroFactorie(IStaticDataService staticDataService, IAssetProvider assetProvider, DiContainer container)
         {
-            throw new System.NotImplementedException();
+            _staticDataService = staticDataService;
+            _assetProvider = assetProvider;
+            _container = container;
+        }
+        public async Task WarmUp()
+        {
+           await _assetProvider.Load<GameObject>(key: heroPrefabId);
         }
 
         public void CleanUp()
         {
-            throw new System.NotImplementedException();
+            Hero = null;
+            _assetProvider.Release(key: heroPrefabId);
         }
 
-        public Task<GameObject> Create(Vector3 at)
+        public async Task<GameObject> Create(Vector3 at)
         {
-            throw new System.NotImplementedException();
+            var config = _staticDataService.ForHero();
+            var prefab = await _assetProvider.Load<GameObject>(key: heroPrefabId);
+
+            return Hero = Object.Instantiate(prefab, at, quaternion.identity)
+                .With(hero => _container.InjectGameObject(hero))
+                .With(hero => hero.GetComponent<SpineArcher>());
+
         }
     }
 
