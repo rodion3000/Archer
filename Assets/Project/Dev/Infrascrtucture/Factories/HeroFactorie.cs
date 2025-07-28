@@ -44,7 +44,9 @@ namespace Project.Dev.Infrastructure.Factories
 
             return Hero = Object.Instantiate(prefab, at, quaternion.identity)
                 .With(hero => _container.InjectGameObject(hero))
-                .With(hero => hero.GetComponent<SpineArcher>());
+                .With(hero => hero.GetComponent<SpineArcher>()
+                    // .With(spineArcher =>  spineArcher.arrowPrefab = config.arrowPrefab)
+                );
 
         }
     }

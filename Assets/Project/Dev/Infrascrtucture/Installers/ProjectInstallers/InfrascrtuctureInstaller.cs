@@ -1,23 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
-using UnityEngine;
+using Project.Dev.Infrastructure.AssetManager;
+using Project.Dev.Infrastructure.SceneManagment;
+using Project.Dev.Services.Logging;
+using Project.Dev.Services.StaticDataService;
 using Zenject;
 
-public class InfrascrtuctureInstaller : MonoInstaller
+namespace Project.Dev.Infrastructure.Installers.ProjectInstallers
 {
-    [SerializeField] private GameObject curtainServicePrefab;
-    public override void InstallBindings()
+    public class InfrascrtuctureInstaller : MonoInstaller
     {
-        BindServices();
-    }
 
-    private void BindServices()
-    {
-        Container.BindInterfacesAndSelfTo<CurtainService>()
-            .FromComponentInNewPrefab(curtainServicePrefab)
-            .WithGameObjectName("Curtain")
-            .UnderTransformGroup("Infrastructure")
-            .AsSingle().NonLazy();
+        public override void InstallBindings()
+        {
+            Container.BindInterfacesAndSelfTo<AddressableProvider>().AsSingle();
+            Container.Bind<SceneLoader>().AsSingle();
+        }
+
+        private void BindServices()
+        {
+            Container.BindInterfacesAndSelfTo<LoggingService>().AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<StaticDataService>().AsSingle().NonLazy();
+        }
     }
 }
