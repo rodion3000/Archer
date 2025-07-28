@@ -1,4 +1,5 @@
 using Project.Dev.Infrastructure.AssetManager;
+using Project.Dev.Infrastructure.Factories;
 using Project.Dev.Infrastructure.SceneManagment;
 using Project.Dev.Services.Logging;
 using Project.Dev.Services.StaticDataService;
@@ -19,6 +20,11 @@ namespace Project.Dev.Infrastructure.Installers.ProjectInstallers
         {
             Container.BindInterfacesAndSelfTo<LoggingService>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<StaticDataService>().AsSingle().NonLazy();
+        }
+
+        private void BindFactories()
+        {
+            Container.BindInterfacesAndSelfTo<StateFactories>().AsSingle();
         }
     }
 }

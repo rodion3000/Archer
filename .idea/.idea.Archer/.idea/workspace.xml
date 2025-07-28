@@ -5,33 +5,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_Atlas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet_Atlas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet_Atlas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet_Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/NPC/Player/SpineArcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/NPC/Player/SpineArcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/HeroFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/HeroFactorie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/CurtainService.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/CurtainService/CurtainService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/CurtainService/CurtainService.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/CurtainService/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/CurtainService/Prefabs/CurtainServicePrefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/CurtainService/Prefabs/CurtainServicePrefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/PersistentDataService.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/PersistentDataService/IPersistentDataService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/PersistentDataService/IPersistentDataService.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/PersistentDataService/PersistentDataService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/PersistentDataService/PersistentDataService.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/SaveLoadLocalService.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/SaveLoadLocalService/ISaveLoadLocalService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/SaveLoadLocalService/ISaveLoadLocalService.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/SaveLoadLocalService/SaveLoadLocalService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/SaveLoadLocalService/SaveLoadLocalService.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/AssetManager.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/AssetManager/AdressablesProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/AssetManager/AdressablesProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/AssetManager/IAssetProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/AssetManager/IAssetProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/EnemyFactorie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/EnemyFactorie.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/FunctionalExtensions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/FunctionalExtensions/FunctionalExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/FunctionalExtensions/FunctionalExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/HeroFactorie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/HeroFactorie.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/Interfaces.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/Interfaces/IEnemyFactorie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/Interfaces/IEnemyFactorie.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/Interfaces/IHeroFactorie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/Interfaces/IHeroFactorie.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/Interfaces/IStageFactorie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/Interfaces/IStageFactorie.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/Interfaces/IUIFactorie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/Interfaces/IUIFactorie.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/StageFactorie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/StageFactorie.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/StateFactories.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/StateFactories.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/UIFactorie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/UIFactorie.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/Interface.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/Interface/IExitableState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/Interface/IExitableState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/Interface/IPayloadedState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/Interface/IPayloadedState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/Interface/IState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/Interface/IState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/BootstrapState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/BootstrapState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/GameLoopState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/GameLoopState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/GameStateMachine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/GameStateMachine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/LoadLevelState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/LoadLevelState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/LoadMetaState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/LoadMetaState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/LoadProgresState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/States/LoadProgresState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/TaskExtensions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/TaskExtensions/TaskExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/TaskExtensions/TaskExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/GameSceneInstaller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/GameSceneInstaller/GameSceneInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/GameSceneInstaller/GameSceneInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/ProjectInstallers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/ProjectInstallers/GamePlayInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/ProjectInstallers/GamePlayInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/ProjectInstallers/GameStateMachineInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/ProjectInstallers/GameStateMachineInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/SceneManager.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/SceneManager/SceneLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/SceneManager/SceneLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/SceneManager/SceneManagementExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/SceneManager/SceneManagementExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/SceneManager/SceneName.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/SceneManager/SceneName.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
