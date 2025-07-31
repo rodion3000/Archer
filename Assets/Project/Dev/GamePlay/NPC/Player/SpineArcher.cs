@@ -20,9 +20,9 @@ namespace Project.Dev.GamePlay.NPC.Player
         private Bone bulletBone; // Ссылка на кость "bullet"
         private Bone string_c;
 
-        public GameObject arrowPrefab; // Префаб стрелы
+        [SerializeField] private GameObject arrowPrefab; // Префаб стрелы
         public float arrowSpeed = 10f; // Скорость полета стрелы
-        public Transform stringObject;
+        [SerializeField] private Transform stringObject;
         public float tiltSpeed = 5f; // Скорость наклона
         public float maxTiltAngle = 30f; // Максимальный угол наклона
 
