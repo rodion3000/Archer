@@ -8,6 +8,6 @@ namespace Project.Dev.Infrastructure.Factories.Interfaces
         GameObject Hero { get; }
         Task WarmUp();
         void CleanUp();
-        Task<GameObject> Create(Vector3 at);
+        Task<GameObject> Create(Transform at);
     }
 }

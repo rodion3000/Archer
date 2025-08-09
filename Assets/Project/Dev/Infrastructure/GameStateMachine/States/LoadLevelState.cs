@@ -1,21 +1,63 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Threading.Tasks;
+using Project.Data.StageData;
+using Project.Dev.Infrastructure.Factories.Interfaces;
 using Project.Dev.Infrastructure.GameStateMachine.Interface;
+using Project.Dev.Infrastructure.GameStateMachine.TaskExtensions;
+using Project.Dev.Infrastructure.SceneManagment;
 using UnityEngine;
 
 namespace Project.Dev.Infrastructure.GameStateMachine.States
 {
-    public class LoadLevelState : IState
+    public class LoadLevelState : IPayloadedState<StageLocalData>
     {
+        private readonly IHeroFactory _heroFactory;
+        private readonly IStageFactorie _stageFactorie;
+        private readonly GameStateMachine _gameStateMachine;
+        private readonly SceneLoader _sceneLoader;
+        
+        private StageLocalData _stageLocalData;
+
+        public LoadLevelState(GameStateMachine gameStateMachine, IHeroFactory heroFactory, IStageFactorie stageFactorie,
+            SceneLoader sceneLoader)
+        {
+            _gameStateMachine = gameStateMachine;
+            _heroFactory = heroFactory;
+            _stageFactorie = stageFactorie;
+            _sceneLoader = sceneLoader;
+        }
+        
+        public void Enter(StageLocalData data)
+        {
+            _stageLocalData = data;
+            _ = WarmUpAndLoad().ProcessErrors();
+        }
+        
         public void Exit()
         {
-            
+            _stageFactorie.CleanUp(_stageLocalData.locationName);
+            _stageLocalData = null;
         }
 
-        public void Enter()
+        private async Task WarmUpAndLoad()
         {
+            await _heroFactory.WarmUp();
+            await _stageFactorie.WarmUp(_stageLocalData.locationName);
             
+            var sceneInstance = await _sceneLoader.Load(SceneName.Core);
+
+            await InitGameWorld();
+            _gameStateMachine.Enter<GameLoopState>();
         }
+        private async Task InitGameWorld()
+        {
+            await SetupStage();
+            await SetupHero();
+        }
+
+        private async Task SetupStage() =>
+            await _stageFactorie.CreateLocation(_stageLocalData.locationName);
+        private async Task<GameObject> SetupHero() =>
+           await _heroFactory.Create(_stageLocalData.playerSpawnPoint);
     }
 }
 

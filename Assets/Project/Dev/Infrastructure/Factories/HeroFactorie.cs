@@ -37,12 +37,12 @@ namespace Project.Dev.Infrastructure.Factories
             _assetProvider.Release(key: heroPrefabId);
         }
 
-        public async Task<GameObject> Create(Vector3 at)
+        public async Task<GameObject> Create(Transform at)
         {
             var config = _staticDataService.ForHero();
             var prefab = await _assetProvider.Load<GameObject>(key: heroPrefabId);
 
-            return Hero = Object.Instantiate(prefab, at, quaternion.identity)
+            return Hero = Object.Instantiate(prefab, at.position, quaternion.identity)
                 .With(hero => _container.InjectGameObject(hero))
                 .With(hero => hero.GetComponent<SpineArcher>()
                      .With(spineArcher =>  spineArcher.arrowSpeed = config.arrowSpeed)

@@ -33,7 +33,7 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
             foreach (var service in _initializableServices)
                 await service.InitializeAsync();
 
-            _stateMachine.Enter<LoadProgresState>();
+            _stateMachine.Enter<LoadMetaState>();
         }
 
 

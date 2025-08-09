@@ -6,12 +6,126 @@
   <component name="ChangeListManager">
     <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Prefabs/string.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Prefabs/string.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/HeroLocalData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Data/HeroData/HeroLocalData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/NPC/Player/SpineArcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/NPC/Player/SpineArcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer.atlas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer.atlas.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_Atlas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_Atlas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_SkeletonData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_SkeletonData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet.atlas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet.atlas.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet_Atlas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet_Atlas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet_SkeletonData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/Archer_Json/archer_bullet_SkeletonData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/arm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/arm.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/body.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/body.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/bow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/bow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/bow2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/bow2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/head.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/leg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/leg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0002.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0003.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0004.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0005.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0006.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0007.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0008.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/splash/splash_0009.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/string.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer/string.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer_с.spine" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Animation/archer/archer_с.spine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Prefabs/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Prefabs/arrow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Prefabs/arrow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Prefabs/string.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/Prefabs/string.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/point.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/StageData/StageLocalData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Data/StageData/StageLocalData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/HeroFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/HeroFactorie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/Interfaces/IHeroFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/Interfaces/IHeroFactorie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/Interfaces/IStageFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/Interfaces/IStageFactorie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/StageFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/StageFactorie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/BootstrapState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadMetaState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadMetaState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/bar_pattern.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/bar_pattern.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/bg_pattern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/bg_pattern.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_bg.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_bg.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_border.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_border.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_border_1corner-up.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_border_1corner-up.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_border_1corner.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_border_1corner.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_border_no_corners.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_border_no_corners.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_fill_1corner-up.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_fill_1corner-up.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_fill_1corner.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_fill_1corner.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_inner_bg.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UI/window_inner_bg.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UIRootPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/Assets/UIRootPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/MainMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/MainMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/UI/Windows.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/UI/Windows/OnButtonWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/UI/Windows/OnButtonWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/UI/Windows/TwoButtonWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/UI/Windows/TwoButtonWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/UI/Windows/WindowBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/UI/Windows/WindowBase.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,15 +138,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Project/Data/MenuData/PlayerEconomyData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Data/MenuData/PlayerProgressData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/AssetManager/IAssetProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Factories/FunctionalExtensions/FunctionalExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/Interface/IPayloadedState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/GameStateMachine/TaskExtensions/TaskExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/Installers/GameSceneInstaller/GameSceneInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Infrascrtucture/SceneManager/SceneManagementExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Services/Logging/LoggingService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Services/SaveLoadLocalService/ISaveLoadLocalService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/IStaticDataService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/UI/Button/NextLvlButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/UI/Windows/TwoButtonWindow.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -141,6 +249,10 @@
       <workItem from="1753704669790" duration="159000" />
       <workItem from="1753726432229" duration="1154000" />
       <workItem from="1753957087833" duration="5462000" />
+      <workItem from="1754127458231" duration="17217000" />
+      <workItem from="1754457549467" duration="10666000" />
+      <workItem from="1754477557418" duration="5859000" />
+      <workItem from="1754731429630" duration="7774000" />
     </task>
     <servers />
   </component>

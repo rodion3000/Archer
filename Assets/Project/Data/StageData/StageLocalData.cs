@@ -5,10 +5,9 @@ namespace Project.Data.StageData
 {
 
     [Serializable]
-    public record StageLocalData
+    public class StageLocalData
     {
-        public string LocationName { get;  set; }
-        public Vector3 PlayerSpawnPoint { get;  set; }
-        public TransitLocationData[] TransitSpawnPoint { get; set; }
+        public string locationName;
+        public Transform playerSpawnPoint;
     }
 }
