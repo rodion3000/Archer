@@ -50,11 +50,11 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
         }
         private async Task InitGameWorld()
         {
-            await SetupStage();
+            await SetupLocation();
             await SetupHero();
         }
 
-        private async Task SetupStage() =>
+        private async Task SetupLocation() =>
             await _stageFactorie.CreateLocation(_stageLocalData.locationName);
         private async Task<GameObject> SetupHero() =>
            await _heroFactory.Create(_stageLocalData.playerSpawnPoint);
