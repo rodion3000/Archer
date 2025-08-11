@@ -1,18 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
+using Project.Data.StageData;
+using Project.Dev.GamePlay.Location;
+using Project.Dev.Infrastructure.GameStateMachine.States;
 using UnityEngine;
+using UnityEngine.UI;
+using Zenject;
 
-public class HudController : MonoBehaviour
+namespace Project.Dev.Meta.UI.HudController
 {
-    // Start is called before the first frame update
-    void Start()
+    public class HudController : MonoBehaviour
     {
+        [SerializeField] private Button nextLvlButton;
+        private GameStateMachine _stateMachine;
+        private StageLocalData localData;
+        private LocationManager _locationManager;
         
-    }
+        [Inject]
+        private void Construct(GameStateMachine stateMachine, LocationManager locationManager)
+        {
+            _stateMachine = stateMachine;
+            _locationManager = locationManager;
+        }
+        
+        private void NextLvlButtonClicked()
+        {
+            nextLvlButton.onClick.AddListener((() => 
+            {
+                _locationManager.InitializeData(out localData);
+                _stateMachine.Enter<LoadLevelState, StageLocalData>(localData);
+            }));
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

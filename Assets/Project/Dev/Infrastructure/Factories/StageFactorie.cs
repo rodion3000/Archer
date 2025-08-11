@@ -1,17 +1,22 @@
 using System.Threading.Tasks;
+using Project.Dev.GamePlay.Location;
 using Project.Dev.Infrastructure.AssetManager;
+using Project.Dev.Infrastructure.Factories.FunctionalExtensions;
 using Project.Dev.Infrastructure.Factories.Interfaces;
 using UnityEngine;
+using Zenject;
 
 namespace Project.Dev.Infrastructure.Factories
 {
     public class StageFactorie : IStageFactorie
     {
         private readonly IAssetProvider _assetProvider;
+        private readonly DiContainer _container;
 
-        public StageFactorie(IAssetProvider assetProvider)
+        public StageFactorie(IAssetProvider assetProvider, DiContainer container)
         {
             _assetProvider = assetProvider;
+            _container = container;
         }
         public async Task WarmUp(string locationName)
         {
@@ -23,10 +28,12 @@ namespace Project.Dev.Infrastructure.Factories
             _assetProvider.Release(key: locationName);
         }
 
-        public async Task<GameObject> CreateLocation(string locationName)
+        public async Task<LocationManager> CreateLocation(string locationName)
         {
             var prefab = await _assetProvider.Load<GameObject>(key: locationName);
-            return Object.Instantiate(prefab);
+            return Object.Instantiate(prefab)
+                .GetComponent<LocationManager>()
+                .With(location => _container.Inject(location));
         }
     }
 }

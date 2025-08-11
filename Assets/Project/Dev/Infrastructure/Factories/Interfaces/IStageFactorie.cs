@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Threading.Tasks;
+using Project.Dev.GamePlay.Location;
 
 namespace Project.Dev.Infrastructure.Factories.Interfaces
 {
@@ -7,7 +8,7 @@ namespace Project.Dev.Infrastructure.Factories.Interfaces
     {
         Task WarmUp(string locationName);
         void CleanUp(string locationName);
-        Task<GameObject> CreateLocation(string locationName);
+        Task<LocationManager> CreateLocation(string locationName);
 
     }
 }
