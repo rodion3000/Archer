@@ -12,16 +12,21 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
     {
         private readonly IHeroFactory _heroFactory;
         private readonly IStageFactorie _stageFactorie;
+        private readonly IUIFactorie _uiFactorie;
         private readonly GameStateMachine _gameStateMachine;
         private readonly SceneLoader _sceneLoader;
         
         private StageLocalData _stageLocalData;
 
-        public LoadLevelState(GameStateMachine gameStateMachine, IHeroFactory heroFactory, IStageFactorie stageFactorie,
+        public LoadLevelState(GameStateMachine gameStateMachine,
+            IHeroFactory heroFactory,
+            IStageFactorie stageFactorie,
+            IUIFactorie uiFactorie,
             SceneLoader sceneLoader)
         {
             _gameStateMachine = gameStateMachine;
             _heroFactory = heroFactory;
+            _uiFactorie = uiFactorie;
             _stageFactorie = stageFactorie;
             _sceneLoader = sceneLoader;
         }
@@ -45,9 +50,25 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
             
             var sceneInstance = await _sceneLoader.Load(SceneName.Core);
 
+            await InitUIRoot();
             await InitGameWorld();
+            await InitUI();
             _gameStateMachine.Enter<GameLoopState>();
         }
+
+        private async Task InitUIRoot()
+        {
+            await _uiFactorie.CreateUiRoot();
+        }
+
+        private async Task InitUI()
+        {
+            var hudController = await _uiFactorie.CreateHud();
+
+
+            hudController.Initialize();
+        }
+
         private async Task InitGameWorld()
         {
             await SetupLocation();

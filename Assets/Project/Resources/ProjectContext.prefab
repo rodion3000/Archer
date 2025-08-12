@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2349567675251917039}
-  - component: {fileID: 7000583881177824170}
+  - component: {fileID: 1984518648131879229}
   m_Layer: 0
-  m_Name: Gameplay
+  m_Name: GameStateMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 81698813535138422}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7000583881177824170
+--- !u!114 &1984518648131879229
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,10 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5500382509658891082}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e82c0f8d7de734042a5bad0e64c07309, type: 3}
+  m_Script: {fileID: 11500000, guid: 9bfc4c7fb46aceb4a9c207bce4d305bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1673492263325779171, guid: 6fd5ebe317e648c4989a1a6f2e94cce3, type: 3}
 --- !u!1 &7172166688667815471
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 742ddc716f9330d46816d8faffb3caef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curtainServicePrefab: {fileID: 1524052493458270595, guid: cd5843d40f1f71d44a759f826593f4a3, type: 3}
 --- !u!1 &7896216978539781989
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,7 +137,7 @@ MonoBehaviour:
   _scriptableObjectInstallers: []
   _monoInstallers:
   - {fileID: 8111500391514543850}
-  - {fileID: 7000583881177824170}
+  - {fileID: 1984518648131879229}
   _installerPrefabs: []
   _parentNewObjectsUnderContext: 1
   _editorReflectionBakingCoverageMode: 0

@@ -1,24 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
+using Project.Dev.GamePlay.Logic;
 using UnityEngine;
 using Zenject;
-using Project.Dev.GamePlay.NPC.Player;
 
 public class GamePlayInstaller : MonoInstaller
 {
-    [SerializeField] private GameObject playerPrefab;
+    [SerializeField] private LevelProgressWather levelProgressWather;
     public override void InstallBindings()
     {
-        BindPlayer();
+        Container.BindInstance(levelProgressWather);
     }
 
-    private void BindPlayer()
-    {
-        Container.BindInterfacesAndSelfTo<SpineArcher>()
-            .FromComponentInNewPrefab(playerPrefab)
-            .WithGameObjectName("Player")
-            .UnderTransformGroup("Gameplay")
-            .AsSingle().NonLazy();
-    }
+
     
 }

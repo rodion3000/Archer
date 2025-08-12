@@ -10,6 +10,7 @@ namespace Project.Dev.Meta.UI.HudController
     public class HudController : MonoBehaviour
     {
         [SerializeField] private Button nextLvlButton;
+        [SerializeField] private Button returnButton;
         private GameStateMachine _stateMachine;
         private StageLocalData localData;
         private LocationManager _locationManager;
@@ -20,7 +21,12 @@ namespace Project.Dev.Meta.UI.HudController
             _stateMachine = stateMachine;
             _locationManager = locationManager;
         }
-        
+
+        public void Initialize()
+        {
+            NextLvlButtonClicked();
+            ReturnsButtonClicked();
+        }
         private void NextLvlButtonClicked()
         {
             nextLvlButton.onClick.AddListener((() => 
@@ -29,6 +35,10 @@ namespace Project.Dev.Meta.UI.HudController
                 _stateMachine.Enter<LoadLevelState, StageLocalData>(localData);
             }));
         }
+
+        private void ReturnsButtonClicked() =>
+            returnButton.onClick.AddListener(() =>
+                _stateMachine.Enter<LoadMetaState>());
 
     }
 }
