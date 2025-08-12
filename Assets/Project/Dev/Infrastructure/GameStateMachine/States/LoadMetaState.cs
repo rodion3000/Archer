@@ -21,16 +21,22 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
 
         public void Enter()
         {
-            WarmUpAndLoad().ProcessErrors();
+           _ = WarmUpAndLoad().ProcessErrors();
         }
         private async Task WarmUpAndLoad()
         {
+            await _uiFactorie.WarmUp();
             var sceneInstance = _sceneLoader.Load(SceneName.Meta);
+            await InitUiRoot();
+            await InitMainMenu();
         }
         public void Exit()
         {
-            
+            _uiFactorie.CleanUp();
         }
+
+        private async Task InitUiRoot() =>
+            await _uiFactorie.CreateUiRoot();
 
         private async Task InitMainMenu()
         {

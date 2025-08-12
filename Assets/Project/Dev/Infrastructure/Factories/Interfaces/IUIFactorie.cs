@@ -10,6 +10,7 @@ namespace Project.Dev.Infrastructure.Factories.Interfaces
          void CleanUp();
          Task<MenuController> CreateMenu();
          Task<HudController> CreateHud();
+         Task CreateUiRoot();
 
     }
 }

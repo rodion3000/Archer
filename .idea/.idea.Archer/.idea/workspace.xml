@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/Interfaces/IUIFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/Interfaces/IUIFactorie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/UIFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/UIFactorie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/GameLoopState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/GameLoopState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadMetaState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadMetaState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +23,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Project/Data/MenuData/PlayerEconomyData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Data/MenuData/PlayerProgressData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Logic/LevelProgressWather.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/UIFactorie.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Services/LevelProgress/ILevelProgressService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Services/LevelProgress/LevelProgressService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Services/LevelProgress/LevelProgressServiceResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Services/Logging/LoggingService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/IStaticDataService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -145,7 +149,8 @@
       <workItem from="1754477557418" duration="5859000" />
       <workItem from="1754731429630" duration="11645000" />
       <workItem from="1754896965949" duration="3449000" />
-      <workItem from="1754905508245" duration="2923000" />
+      <workItem from="1754905508245" duration="3396000" />
+      <workItem from="1754977670294" duration="7291000" />
     </task>
     <servers />
   </component>

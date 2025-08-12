@@ -38,6 +38,12 @@ namespace Project.Dev.Infrastructure.Factories
             _assetProvider.Release(key: hudPrefabId);
         }
 
+        public async Task CreateUiRoot()
+        {
+            var prefab = await _assetProvider.Load<GameObject>(key: rootUiPrefabId);
+            _uiRoot = Object.Instantiate(prefab).GetComponent<Canvas>();
+        }
+
         public async Task<MenuController> CreateMenu()
         {
             var prefab = await _assetProvider.Load<GameObject>(key: menuPrefabId);
