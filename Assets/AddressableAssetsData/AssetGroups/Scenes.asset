@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: 2caf9e49c476e6742a5d231edd98a345
   m_SerializeEntries:
   - m_GUID: 2cda990e2423bbf4892e6590ba056729
-    m_Address: Assets/Project/Scenes/Core.unity
+    m_Address: Core
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 1a4f80b1c34e9b447baa9a0608614cce
-    m_Address: Assets/Project/Scenes/Meta.unity
+    m_Address: Meta
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

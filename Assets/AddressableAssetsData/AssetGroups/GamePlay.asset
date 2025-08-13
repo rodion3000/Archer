@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: 424a1fbd9d2eafd489255967dff54bb8
   m_SerializeEntries:
   - m_GUID: 6fd5ebe317e648c4989a1a6f2e94cce3
-    m_Address: Assets/Project/Dev/GamePlay/NPC/Player/Prefabs/Player.prefab
+    m_Address: Player
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

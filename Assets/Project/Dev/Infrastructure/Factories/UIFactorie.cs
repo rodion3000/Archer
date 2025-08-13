@@ -12,7 +12,7 @@ namespace Project.Dev.Infrastructure.Factories
     {
         private const string menuPrefabId = "MenuPrefab";
         private const string hudPrefabId = "HudPrefab";
-        private const string rootUiPrefabId = "RootUiPrefab";
+        private const string rootUiPrefabId = "UIRootPrefab";
 
         private readonly DiContainer _container;
         private readonly IAssetProvider _assetProvider;
