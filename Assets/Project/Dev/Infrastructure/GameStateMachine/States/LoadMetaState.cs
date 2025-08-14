@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using Project.Dev.Infrastructure.Factories.Interfaces;
 using Project.Dev.Infrastructure.GameStateMachine.Interface;
-using Project.Dev.Infrastructure.GameStateMachine.TaskExtensions;
+using CustomExtensions.Tasks;
 using Project.Dev.Infrastructure.SceneManagment;
 
 namespace Project.Dev.Infrastructure.GameStateMachine.States
@@ -23,20 +23,25 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
         {
            _ = WarmUpAndLoad().ProcessErrors();
         }
-        private async Task WarmUpAndLoad()
-        {
-            await _uiFactorie.WarmUp();
-            var sceneInstance = _sceneLoader.Load(SceneName.Meta);
-            await InitUiRoot();
-            await InitMainMenu();
-        }
+
         public void Exit()
         {
             _uiFactorie.CleanUp();
         }
 
+        private async Task WarmUpAndLoad()
+        {
+            await _uiFactorie.WarmUp();
+
+            var sceneInstance = await _sceneLoader.Load(SceneName.Meta);
+            await InitUiRoot();
+            await InitMainMenu();
+        }
+
+
         private async Task InitUiRoot() =>
             await _uiFactorie.CreateUiRoot();
+
 
         private async Task InitMainMenu()
         {

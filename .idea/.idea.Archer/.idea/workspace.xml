@@ -7,23 +7,23 @@
     <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/GamePlay.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/GamePlay.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Scenes.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Scenes.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/Prefab/Lvl1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/Prefab/Lvl1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/UIFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/UIFactorie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/BootstrapState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/GameLoopState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/GameLoopState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/GameSceneInstaller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/GameSceneInstaller/GameSceneInstaller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/GameSceneInstaller/GameSceneInstaller.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/Assets/—Pngtree—start button for games vector_21108097.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/Assets/—Pngtree—start button for games vector_21108097.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/MenuPrefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/MenuPrefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/StartLvlButton.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/StartLvlButton.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Resources/ProjectContext.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Resources/ProjectContext.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/Bootstrap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/Meta.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/Meta.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadMetaState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadMetaState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadProgresState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadProgresState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/TaskExtensions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/TaskExtensions/TaskExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/TaskExtensions/TaskExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/GameStateMachineInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/GameStateMachineInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/MenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/MenuController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/Prefab/MenuPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/Prefab/MenuPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/IStaticDataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/StaticDataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Services/LevelProgress/LevelProgressServiceResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Services/Logging/LoggingService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/IStaticDataService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.rm.customextensions@9b649fd0bd/Tasks/TaskExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Runtime/AddressablesImpl.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -165,7 +166,8 @@
       <workItem from="1754896965949" duration="3449000" />
       <workItem from="1754905508245" duration="3396000" />
       <workItem from="1754977670294" duration="12319000" />
-      <workItem from="1755063536671" duration="5717000" />
+      <workItem from="1755063536671" duration="15525000" />
+      <workItem from="1755151353349" duration="13425000" />
     </task>
     <servers />
   </component>

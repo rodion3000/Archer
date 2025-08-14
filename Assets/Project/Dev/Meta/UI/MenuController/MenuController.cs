@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using CustomExtensions.Tasks;
 using Project.Data.StageData;
 using Project.Dev.Infrastructure.GameStateMachine.States;
 using Project.Dev.Services.Logging;
@@ -24,6 +25,7 @@ namespace Project.Dev.Meta.UI.MenuController
 
         public async Task Initialize()
         {
+            await UnityTaskExtensions.UnitySynchronizationContext;
             StartLvlButtonClicked();
             _logger.LogMessage("Initializing", this);
         }

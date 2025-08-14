@@ -10,9 +10,9 @@ namespace Project.Dev.Infrastructure.Factories
 {
     public class UIFactorie : IUIFactorie
     {
-        private const string menuPrefabId = "MenuPrefab";
-        private const string hudPrefabId = "HudPrefab";
-        private const string rootUiPrefabId = "UIRootPrefab";
+        private const string MenuPrefabId = "MenuPrefab";
+        private const string HUDPrefabId = "HudPrefab";
+        private const string RootUiPrefabId = "UIRootPrefab";
 
         private readonly DiContainer _container;
         private readonly IAssetProvider _assetProvider;
@@ -27,26 +27,25 @@ namespace Project.Dev.Infrastructure.Factories
 
         public async Task WarmUp()
         {
-            await _assetProvider.Load<GameObject>(key: menuPrefabId);
-            await _assetProvider.Load<GameObject>(key: hudPrefabId);
-            await _assetProvider.Load<GameObject>(key: rootUiPrefabId);
+            await _assetProvider.Load<GameObject>(key: RootUiPrefabId);
+            await _assetProvider.Load<GameObject>(key: HUDPrefabId);
+            await _assetProvider.Load<GameObject>(key: MenuPrefabId);
         }
 
         public void CleanUp()
         {
-            _assetProvider.Release(key: menuPrefabId);
-            _assetProvider.Release(key: hudPrefabId);
+             _assetProvider.Release(key: MenuPrefabId);
         }
 
         public async Task CreateUiRoot()
         {
-            var prefab = await _assetProvider.Load<GameObject>(key: rootUiPrefabId);
+            var prefab = await _assetProvider.Load<GameObject>(key: RootUiPrefabId);
             _uiRoot = Object.Instantiate(prefab).GetComponent<Canvas>();
         }
 
         public async Task<MenuController> CreateMenu()
         {
-            var prefab = await _assetProvider.Load<GameObject>(key: menuPrefabId);
+            var prefab = await _assetProvider.Load<GameObject>(key: MenuPrefabId);
             var menu = Object.Instantiate(prefab, _uiRoot.transform).GetComponent<MenuController>();
             _container.InjectGameObject(menu.gameObject);
             return menu;
@@ -54,7 +53,7 @@ namespace Project.Dev.Infrastructure.Factories
 
         public async Task<HudController> CreateHud()
         {
-            var prefab = await _assetProvider.Load<GameObject>(key: hudPrefabId);
+            var prefab = await _assetProvider.Load<GameObject>(key: HUDPrefabId);
             var hud = Object.Instantiate(prefab, _uiRoot.transform).GetComponent<HudController>();
             _container.Inject(hud);
             return hud;

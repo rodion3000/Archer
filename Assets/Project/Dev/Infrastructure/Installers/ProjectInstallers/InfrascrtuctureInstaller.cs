@@ -22,7 +22,7 @@ namespace Project.Dev.Infrastructure.Installers.ProjectInstallers
 
         private void BindServices()
         {
-            Container.BindInterfacesAndSelfTo<LoggingService>().AsSingle().NonLazy();
+            Container.Bind<ILoggingService>().To<LoggingService>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<StaticDataService>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<LevelProgressServiceResolver>()
                 .AsSingle()

@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using Project.Data.StageData;
 using Project.Dev.Infrastructure.Factories.Interfaces;
 using Project.Dev.Infrastructure.GameStateMachine.Interface;
-using Project.Dev.Infrastructure.GameStateMachine.TaskExtensions;
+using CustomExtensions.Tasks;
 using Project.Dev.Infrastructure.SceneManagment;
 using UnityEngine;
 
@@ -34,7 +34,7 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
         public void Enter(StageLocalData data)
         {
             _stageLocalData = data;
-            _ = WarmUpAndLoad().ProcessErrors();
+        //    _ = WarmUpAndLoad().ProcessErrors();
         }
         
         public void Exit()

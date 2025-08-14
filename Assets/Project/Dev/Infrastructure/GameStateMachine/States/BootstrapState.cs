@@ -2,8 +2,7 @@ using System.Collections.Generic;
 using Project.Dev.Infrastructure.GameStateMachine.Interface;
 using Project.Dev.Services.Interfaces;
 using System.Threading.Tasks;
-using Project.Dev.Infrastructure.GameStateMachine.TaskExtensions;
-using Project.Dev.Services.Logging;
+using CustomExtensions.Tasks;
 
 namespace Project.Dev.Infrastructure.GameStateMachine.States
 {
@@ -11,24 +10,19 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
     {
         private readonly GameStateMachine _stateMachine;
         private readonly List<IInitializableAsync> _initializableServices;
-        private readonly LoggingService _loggingService;
 
-        public BootstrapState(GameStateMachine stateMachine, List<IInitializableAsync> initializableServices, LoggingService loggingService)
+        public BootstrapState(GameStateMachine stateMachine, List<IInitializableAsync> initializableServices)
         {
             _stateMachine = stateMachine;
             _initializableServices = initializableServices;
-            _loggingService = loggingService;
-        }
-        public void Exit()
-        {
-
         }
 
         public void Enter()
         {
             _ = InitializeServices().ProcessErrors();
-            _loggingService.LogMessage("Bootstrap start");
-
+        }
+        public void Exit()
+        {
 
         }
 
@@ -37,7 +31,7 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
             foreach (var service in _initializableServices)
                 await service.InitializeAsync();
 
-            _stateMachine.Enter<LoadMetaState>();
+            _stateMachine.Enter<LoadProgresState>();
         }
 
 
