@@ -21,10 +21,10 @@ namespace Project.Dev.GamePlay.NPC.Player
         private Bone string_c;
 
         [SerializeField] private GameObject arrowPrefab; // Префаб стрелы
-        public float arrowSpeed = 10f; // Скорость полета стрелы
+        public float arrowSpeed; // Скорость полета стрелы
         [SerializeField] private Transform stringObject;
-        public float tiltSpeed = 5f; // Скорость наклона
-        public float maxTiltAngle = 30f; // Максимальный угол наклона
+        public float tiltSpeed; // Скорость наклона
+        public float maxTiltAngle; // Максимальный угол наклона
 
         private Vector3 lastMousePosition; // Последняя позиция мыши
         private bool isAttacking = false; // Флаг для отслеживания атаки

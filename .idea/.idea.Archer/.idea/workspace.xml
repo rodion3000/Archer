@@ -6,24 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Locations.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Locations.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/HeroLocalData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Data/HeroData/HeroLocalData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/HeroData/HeroLocalData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Data/HeroData/HeroLocalData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Data/StageData/StageLocalData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Data/StageData/StageLocalData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/LocationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/LocationManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/Prefab/Lvl1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/Prefab/Lvl1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/UIFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/UIFactorie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/BootstrapState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/NPC/Player/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/NPC/Player/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/NPC/Player/SpineArcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/NPC/Player/SpineArcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/HeroFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/HeroFactorie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/Interfaces/IHeroFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/Interfaces/IHeroFactorie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/StageFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/StageFactorie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadLevelState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadMetaState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadMetaState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadProgresState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/States/LoadProgresState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/TaskExtensions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/TaskExtensions/TaskExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/GameStateMachine/TaskExtensions/TaskExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/GameStateMachineInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/GameStateMachineInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/MenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/MenuController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/Prefab/MenuPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/Prefab/MenuPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/IStaticDataService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/StaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/Meta.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/Meta.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +31,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Project/Data/HeroData/StageProgressData/StageProgressData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Data/MenuData/PlayerEconomyData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Data/MenuData/PlayerProgressData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Logic/LevelProgressWather.cs" root0="FORCE_HIGHLIGHTING" />
@@ -167,7 +165,8 @@
       <workItem from="1754905508245" duration="3396000" />
       <workItem from="1754977670294" duration="12319000" />
       <workItem from="1755063536671" duration="15525000" />
-      <workItem from="1755151353349" duration="13425000" />
+      <workItem from="1755151353349" duration="13502000" />
+      <workItem from="1755498904882" duration="10121000" />
     </task>
     <servers />
   </component>

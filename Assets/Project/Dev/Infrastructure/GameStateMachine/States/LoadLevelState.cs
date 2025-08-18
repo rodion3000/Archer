@@ -3,6 +3,7 @@ using Project.Data.StageData;
 using Project.Dev.Infrastructure.Factories.Interfaces;
 using Project.Dev.Infrastructure.GameStateMachine.Interface;
 using CustomExtensions.Tasks;
+using Project.Data.HeroData.StageProgressData;
 using Project.Dev.Infrastructure.SceneManagment;
 using UnityEngine;
 
@@ -17,6 +18,7 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
         private readonly SceneLoader _sceneLoader;
         
         private StageLocalData _stageLocalData;
+        private StageProgressData _stageProgressData;
 
         public LoadLevelState(GameStateMachine gameStateMachine,
             IHeroFactory heroFactory,
@@ -34,7 +36,8 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
         public void Enter(StageLocalData data)
         {
             _stageLocalData = data;
-        //    _ = WarmUpAndLoad().ProcessErrors();
+            _stageProgressData = new StageProgressData();
+            _ = WarmUpAndLoad().ProcessErrors();
         }
         
         public void Exit()
@@ -65,14 +68,18 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
         {
             var hudController = await _uiFactorie.CreateHud();
 
-
             hudController.Initialize();
         }
 
         private async Task InitGameWorld()
         {
             await SetupLocation();
-            await SetupHero();
+            _stageProgressData.Hero = await SetupHero();
+            SetupCamera(_stageProgressData.Hero);
+        }
+        private void SetupCamera(GameObject hero)
+        {
+            //set up camera follow
         }
 
         private async Task SetupLocation() =>

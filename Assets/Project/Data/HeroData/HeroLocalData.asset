@@ -12,16 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820433de39c85b445af6686cde18268f, type: 3}
   m_Name: HeroLocalData
   m_EditorClassIdentifier: 
-  <arrowPrefab>k__BackingField:
-    m_AssetGUID: 
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  <arrowSpeed>k__BackingField: 0
-  <tiltSpeed>k__BackingField: 0
-  <stringObject>k__BackingField:
-    m_AssetGUID: 
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  <maxTiltAngle>k__BackingField: 0
+  <arrowSpeed>k__BackingField: 7
+  <tiltSpeed>k__BackingField: 90
+  <maxTiltAngle>k__BackingField: 70

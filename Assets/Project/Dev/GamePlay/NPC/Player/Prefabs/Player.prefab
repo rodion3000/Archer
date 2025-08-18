@@ -141,10 +141,10 @@ MonoBehaviour:
   attack_target: attack_target
   attack_finish: attack_finish
   arrowPrefab: {fileID: 971274405774349940, guid: 1858ac82009066c4a8092d112488a5e3, type: 3}
-  arrowSpeed: 7
+  arrowSpeed: 0
   stringObject: {fileID: 1673492262911778035}
-  tiltSpeed: 90
-  maxTiltAngle: 70
+  tiltSpeed: 0
+  maxTiltAngle: 0
 --- !u!61 &1673492263325779181
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -8,6 +8,6 @@ namespace Project.Data.StageData
     public class StageLocalData
     {
         public string locationName;
-        public Transform playerSpawnPoint;
+        public Vector3 playerSpawnPoint;
     }
 }

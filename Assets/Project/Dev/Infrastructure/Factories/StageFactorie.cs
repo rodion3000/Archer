@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using Project.Dev.GamePlay.Location;
 using Project.Dev.Infrastructure.AssetManager;
-using Project.Dev.Infrastructure.Factories.FunctionalExtensions;
+using CustomExtensions.Functional;
 using Project.Dev.Infrastructure.Factories.Interfaces;
 using UnityEngine;
 using Zenject;

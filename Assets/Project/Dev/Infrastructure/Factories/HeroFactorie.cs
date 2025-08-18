@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using JetBrains.Annotations;
 using Project.Dev.Infrastructure.Factories.Interfaces;
 using UnityEngine;
-using Project.Dev.Infrastructure.Factories.FunctionalExtensions;
+using CustomExtensions.Functional;
 using Project.Dev.GamePlay.NPC.Player;
 using Project.Dev.Infrastructure.AssetManager;
 using Project.Dev.Services.StaticDataService;
@@ -37,12 +37,12 @@ namespace Project.Dev.Infrastructure.Factories
             _assetProvider.Release(key: heroPrefabId);
         }
 
-        public async Task<GameObject> Create(Transform at)
+        public async Task<GameObject> Create(Vector3 at)
         {
             var config = _staticDataService.ForHero();
             var prefab = await _assetProvider.Load<GameObject>(key: heroPrefabId);
 
-            return Hero = Object.Instantiate(prefab, at.position, quaternion.identity)
+            return Hero = Object.Instantiate(prefab, at, quaternion.identity)
                 .With(hero => _container.InjectGameObject(hero))
                 .With(hero => hero.GetComponent<SpineArcher>()
                      .With(spineArcher =>  spineArcher.arrowSpeed = config.arrowSpeed)

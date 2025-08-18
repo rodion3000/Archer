@@ -8,16 +8,15 @@ namespace Project.Dev.GamePlay.Location
     {
         [SerializeField] private StageLocalData _stageLocalData;
 
-        [Inject]
-        private void Construct(StageLocalData stageLocalData)
-        {
-            _stageLocalData = stageLocalData;
-        }
+      //  [Inject]
+       // private void Construct(StageLocalData stageLocalData)
+     //   {
+       //     _stageLocalData = stageLocalData;
+       // }
 
         public void InitializeData(out StageLocalData localData)
         {
             localData = _stageLocalData;
         }
-
     }
 }

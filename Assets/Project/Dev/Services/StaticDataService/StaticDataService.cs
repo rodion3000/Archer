@@ -1,7 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using Project.Data.HeroLocalData;
 using Project.Data.StageData;
 
@@ -23,7 +21,6 @@ namespace Project.Dev.Services.StaticDataService
 
         public HeroLocalData ForHero() =>
             _heroLocalData;
-
 
     }
 }
