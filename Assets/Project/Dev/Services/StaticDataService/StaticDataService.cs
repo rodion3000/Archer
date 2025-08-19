@@ -10,6 +10,11 @@ namespace Project.Dev.Services.StaticDataService
         private Dictionary<string, StageLocalData> _stages;
         private HeroLocalData _heroLocalData;
 
+        public StaticDataService(HeroLocalData heroLocalData)
+        {
+            _heroLocalData = heroLocalData;
+        }
+
         public StageLocalData ForStage(string stageKey) =>
             _stages.TryGetValue(stageKey, out var stageData)
                 ? stageData
