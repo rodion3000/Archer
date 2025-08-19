@@ -8,11 +8,11 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
     public class GameLoopState : IState
     {
         private readonly GameStateMachine _stateMachine;
-        private readonly IHeroFactory _heroFactorie;
+        private readonly IHeroFactorie _heroFactorie;
         private readonly ILevelProgressService _levelProgressService;
 
         public GameLoopState(GameStateMachine stateMachine,
-            IHeroFactory heroFactorie,
+            IHeroFactorie heroFactorie,
             ILevelProgressService levelProgressService)
         {
             _stateMachine = stateMachine;

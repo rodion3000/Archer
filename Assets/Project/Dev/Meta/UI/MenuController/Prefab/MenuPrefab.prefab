@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stageLocalData:
     locationName: Lvl1
-    playerSpawnPoint: {x: 1, y: 1, z: 1}
+    playerSpawnPoint: {x: 0, y: 0, z: 0}
   startButton: {fileID: 151539483451265872}
 --- !u!222 &6361935870491622230
 CanvasRenderer:

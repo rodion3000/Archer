@@ -11,9 +11,9 @@ using Zenject;
 
 namespace Project.Dev.Infrastructure.Factories
 {
-    public class HeroFactorie : IHeroFactory
+    public class HeroFactorie : IHeroFactorie
     {
-        private const string heroPrefabId = "Player";
+        private const string HeroPrefabId = "Player";
         private readonly IStaticDataService _staticDataService;
         private readonly IAssetProvider _assetProvider;
         private readonly DiContainer _container;
@@ -26,21 +26,22 @@ namespace Project.Dev.Infrastructure.Factories
             _assetProvider = assetProvider;
             _container = container;
         }
+
         public async Task WarmUp()
         {
-           await _assetProvider.Load<GameObject>(key: heroPrefabId);
+           await _assetProvider.Load<GameObject>(key: HeroPrefabId);
         }
 
         public void CleanUp()
         {
             Hero = null;
-            _assetProvider.Release(key: heroPrefabId);
+            _assetProvider.Release(key: HeroPrefabId);
         }
 
         public async Task<GameObject> Create(Vector3 at)
         {
             var config = _staticDataService.ForHero();
-            var prefab = await _assetProvider.Load<GameObject>(key: heroPrefabId);
+            var prefab = await _assetProvider.Load<GameObject>(key: HeroPrefabId);
 
             return Hero = Object.Instantiate(prefab, at, quaternion.identity)
                 .With(hero => _container.InjectGameObject(hero))
@@ -49,7 +50,6 @@ namespace Project.Dev.Infrastructure.Factories
                      .With(spineArcher =>  spineArcher.tiltSpeed = config.tiltSpeed)
                      .With(spineArcher =>  spineArcher.maxTiltAngle = config.maxTiltAngle)
                 );
-
         }
     }
 

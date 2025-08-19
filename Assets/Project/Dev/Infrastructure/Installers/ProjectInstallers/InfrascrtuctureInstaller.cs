@@ -33,7 +33,7 @@ namespace Project.Dev.Infrastructure.Installers.ProjectInstallers
         private void BindFactories()
         {
             Container.BindInterfacesAndSelfTo<StateFactories>().AsSingle();
-            Container.Bind<IHeroFactory>().To<HeroFactorie>().AsSingle();
+            Container.Bind<IHeroFactorie>().To<HeroFactorie>().AsSingle();
             Container.Bind<IStageFactorie>().To<StageFactorie>().AsSingle();
             Container.Bind<IUIFactorie>().To<UIFactorie>().AsSingle();
         }

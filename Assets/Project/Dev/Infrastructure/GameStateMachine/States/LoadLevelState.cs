@@ -11,7 +11,7 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
 {
     public class LoadLevelState : IPayloadedState<StageLocalData>
     {
-        private readonly IHeroFactory _heroFactory;
+        private readonly IHeroFactorie _heroFactory;
         private readonly IStageFactorie _stageFactorie;
         private readonly IUIFactorie _uiFactorie;
         private readonly GameStateMachine _gameStateMachine;
@@ -21,7 +21,7 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
         private StageProgressData _stageProgressData;
 
         public LoadLevelState(GameStateMachine gameStateMachine,
-            IHeroFactory heroFactory,
+            IHeroFactorie heroFactory,
             IStageFactorie stageFactorie,
             IUIFactorie uiFactorie,
             SceneLoader sceneLoader)
@@ -74,7 +74,7 @@ namespace Project.Dev.Infrastructure.GameStateMachine.States
         private async Task InitGameWorld()
         {
             await SetupLocation();
-            _stageProgressData.Hero = await SetupHero();
+           _stageProgressData.Hero = await SetupHero();
             SetupCamera(_stageProgressData.Hero);
         }
         private void SetupCamera(GameObject hero)
