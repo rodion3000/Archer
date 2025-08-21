@@ -9,6 +9,7 @@ namespace Project.Dev.Services.StaticDataService
     {
         private Dictionary<string, StageLocalData> _stages;
         private HeroLocalData _heroLocalData;
+        private StageLocalData _staticLocalData;
 
         public StaticDataService(HeroLocalData heroLocalData)
         {
@@ -20,6 +21,16 @@ namespace Project.Dev.Services.StaticDataService
                 ? stageData
                 : null;
 
+        public StageLocalData SetStageLocalData(StageLocalData localData)
+        {
+            _staticLocalData = localData;
+            return _staticLocalData;
+        }
+
+        public StageLocalData GetStageLocalData()
+        {
+            return _staticLocalData;
+        }
 
         public List<StageLocalData> GetAllStages =>
             _stages.Values.ToList();

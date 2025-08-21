@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/LocationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/LocationManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/Prefab/Lvl2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/Prefab/Lvl2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/StageFactorie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Factories/StageFactorie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/HudController/HudController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/HudController/HudController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/Core.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/Core.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/IStaticDataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/StaticDataService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

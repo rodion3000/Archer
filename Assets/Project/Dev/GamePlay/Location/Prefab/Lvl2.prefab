@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stageLocalData:
-    locationName: Lvl2
-    playerSpawnPoint: {x: 1, y: 1, z: 1}
+    locationName: Lvl1
+    playerSpawnPoint: {x: 1, y: 2, z: 3}
 --- !u!1 &4715385128153357604
 GameObject:
   m_ObjectHideFlags: 0
