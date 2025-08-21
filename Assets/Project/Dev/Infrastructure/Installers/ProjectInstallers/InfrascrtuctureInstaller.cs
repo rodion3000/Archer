@@ -35,7 +35,6 @@ namespace Project.Dev.Infrastructure.Installers.ProjectInstallers
 
         private void BindFactories()
         {
-
             Container.Bind<HeroLocalData>().FromInstance(_heroLocalData);
             Container.BindInterfacesAndSelfTo<StateFactories>().AsSingle();
             Container.Bind<IHeroFactorie>().To<HeroFactorie>().AsSingle();

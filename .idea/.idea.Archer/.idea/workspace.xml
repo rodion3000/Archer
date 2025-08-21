@@ -7,8 +7,8 @@
     <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Infrastructure/Installers/ProjectInstallers/InfrascrtuctureInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Services/StaticDataService/StaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Resources/ProjectContext.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Resources/ProjectContext.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/HudController/HudController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/HudController/HudController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/Core.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/Core.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +156,9 @@
       <workItem from="1755063536671" duration="15525000" />
       <workItem from="1755151353349" duration="13502000" />
       <workItem from="1755498904882" duration="12064000" />
-      <workItem from="1755583094150" duration="10445000" />
+      <workItem from="1755583094150" duration="10748000" />
+      <workItem from="1755668758770" duration="15295000" />
+      <workItem from="1755754232226" duration="1270000" />
     </task>
     <servers />
   </component>

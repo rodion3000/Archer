@@ -12,14 +12,13 @@ namespace Project.Dev.Meta.UI.HudController
         [SerializeField] private Button nextLvlButton;
         [SerializeField] private Button returnButton;
         private GameStateMachine _stateMachine;
-        private StageLocalData localData;
+        //private StageLocalData localData;
         private LocationManager _locationManager;
         
         [Inject]
-        private void Construct(GameStateMachine stateMachine, LocationManager locationManager)
+        private void Construct(GameStateMachine stateMachine)
         {
             _stateMachine = stateMachine;
-            _locationManager = locationManager;
         }
 
         public void Initialize()
@@ -31,8 +30,8 @@ namespace Project.Dev.Meta.UI.HudController
         {
             nextLvlButton.onClick.AddListener((() => 
             {
-                _locationManager.InitializeData(out localData);
-                _stateMachine.Enter<LoadLevelState, StageLocalData>(localData);
+                _locationManager.InitializeData(out StageLocalData gh);
+                _stateMachine.Enter<LoadLevelState, StageLocalData>(gh);
             }));
         }
 
