@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820433de39c85b445af6686cde18268f, type: 3}
   m_Name: HeroLocalData
   m_EditorClassIdentifier: 
-  <arrowSpeed>k__BackingField: 7
-  <tiltSpeed>k__BackingField: 90
-  <maxTiltAngle>k__BackingField: 70
+  arrowSpeed: 8
+  tiltSpeed: 80
+  maxTiltAngle: 75
