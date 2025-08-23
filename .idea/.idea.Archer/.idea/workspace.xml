@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Archer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/Prefab/Lvl1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/GamePlay/Location/Prefab/Lvl1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/HudController/Prefab/HudPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/HudController/Prefab/HudPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/Prefab/MenuPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Dev/Meta/UI/MenuController/Prefab/MenuPrefab.prefab" afterDir="false" />
-    </list>
+    <list default="true" id="a8ba9c0c-c3f5-4328-86a5-61a914bdd1b3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
